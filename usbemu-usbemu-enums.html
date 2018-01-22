@@ -1,0 +1,815 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>usbemu-enums: libusbemu Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libusbemu Reference Manual">
+<link rel="up" href="core.html" title="Core Classes">
+<link rel="prev" href="UsbemuInterface.html" title="UsbemuInterface">
+<link rel="next" href="usbemu-usbemu-errors.html" title="usbemu-errors">
+<meta name="generator" content="GTK-Doc V1.27 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#usbemu-usbemu-enums.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="UsbemuInterface.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="usbemu-usbemu-errors.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="usbemu-usbemu-enums"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="usbemu-usbemu-enums.top_of_page"></a>usbemu-enums</span></h2>
+<p>usbemu-enums — utility functions for USBEmu enum types</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="usbemu-usbemu-enums.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-configuration-attributes-get-string" title="usbemu_configuration_attributes_get_string ()">usbemu_configuration_attributes_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-configuration-attributes-build-string-from-mask" title="usbemu_configuration_attributes_build_string_from_mask ()">usbemu_configuration_attributes_build_string_from_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-classes-get-string" title="usbemu_classes_get_string ()">usbemu_classes_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-classes-build-string-from-mask" title="usbemu_classes_build_string_from_mask ()">usbemu_classes_build_string_from_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-speeds-get-string" title="usbemu_speeds_get_string ()">usbemu_speeds_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-speeds-build-string-from-mask" title="usbemu_speeds_build_string_from_mask ()">usbemu_speeds_build_string_from_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-error-get-string" title="usbemu_error_get_string ()">usbemu_error_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-error-build-string-from-mask" title="usbemu_error_build_string_from_mask ()">usbemu_error_build_string_from_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-endpoints-get-string" title="usbemu_endpoints_get_string ()">usbemu_endpoints_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-endpoints-build-string-from-mask" title="usbemu_endpoints_build_string_from_mask ()">usbemu_endpoints_build_string_from_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-endpoint-directions-get-string" title="usbemu_endpoint_directions_get_string ()">usbemu_endpoint_directions_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-endpoint-directions-build-string-from-mask" title="usbemu_endpoint_directions_build_string_from_mask ()">usbemu_endpoint_directions_build_string_from_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-endpoint-transfers-get-string" title="usbemu_endpoint_transfers_get_string ()">usbemu_endpoint_transfers_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-endpoint-transfers-build-string-from-mask" title="usbemu_endpoint_transfers_build_string_from_mask ()">usbemu_endpoint_transfers_build_string_from_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-endpoint-isochronous-syncs-get-string" title="usbemu_endpoint_isochronous_syncs_get_string ()">usbemu_endpoint_isochronous_syncs_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-endpoint-isochronous-syncs-build-string-from-mask" title="usbemu_endpoint_isochronous_syncs_build_string_from_mask ()">usbemu_endpoint_isochronous_syncs_build_string_from_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-endpoint-isochronous-usages-get-string" title="usbemu_endpoint_isochronous_usages_get_string ()">usbemu_endpoint_isochronous_usages_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-endpoint-isochronous-usages-build-string-from-mask" title="usbemu_endpoint_isochronous_usages_build_string_from_mask ()">usbemu_endpoint_isochronous_usages_build_string_from_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GEnumValue</span> *
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-enum-get-value-by-name-or-nick" title="usbemu_enum_get_value_by_name_or_nick ()">usbemu_enum_get_value_by_name_or_nick</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="usbemu-usbemu-enums.html#usbemu-flags-from-string" title="usbemu_flags_from_string ()">usbemu_flags_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="usbemu-usbemu-enums.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;usbemu/usbemu.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="usbemu-usbemu-enums.description"></a><h2>Description</h2>
+<p>This section contains automatically generated utility functions for enum
+types used in USBEmu.</p>
+</div>
+<div class="refsect1">
+<a name="usbemu-usbemu-enums.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="usbemu-configuration-attributes-get-string"></a><h3>usbemu_configuration_attributes_get_string ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_configuration_attributes_get_string
+                               (<em class="parameter"><code><a class="link" href="UsbemuConfiguration.html#UsbemuConfigurationAttributes" title="enum UsbemuConfigurationAttributes"><span class="type">UsbemuConfigurationAttributes</span></a> val</code></em>);</pre>
+<p>Gets the nickname string for the <a class="link" href="UsbemuConfiguration.html#UsbemuConfigurationAttributes" title="enum UsbemuConfigurationAttributes"><span class="type">UsbemuConfigurationAttributes</span></a> specified at <em class="parameter"><code>val</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-configuration-attributes-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>val</p></td>
+<td class="parameter_description"><p>a UsbemuConfigurationAttributes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-configuration-attributes-get-string.returns"></a><h4>Returns</h4>
+<p>a string with the nickname, or <code class="literal">NULL</code> if not found. Do not free the returned value. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-configuration-attributes-build-string-from-mask"></a><h3>usbemu_configuration_attributes_build_string_from_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+usbemu_configuration_attributes_build_string_from_mask
+                               (<em class="parameter"><code><a class="link" href="UsbemuConfiguration.html#UsbemuConfigurationAttributes" title="enum UsbemuConfigurationAttributes"><span class="type">UsbemuConfigurationAttributes</span></a> mask</code></em>);</pre>
+<p>Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="UsbemuConfiguration.html#UsbemuConfigurationAttributes" title="enum UsbemuConfigurationAttributes"><span class="type">UsbemuConfigurationAttributes</span></a> in <em class="parameter"><code>mask</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-configuration-attributes-build-string-from-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>bitmask of UsbemuConfigurationAttributes values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-configuration-attributes-build-string-from-mask.returns"></a><h4>Returns</h4>
+<p>a string with the list of nicknames, or <code class="literal">NULL</code> if none given. The returned value should be freed with <code class="function">g_free()</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-classes-get-string"></a><h3>usbemu_classes_get_string ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_classes_get_string (<em class="parameter"><code><a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="type">UsbemuClasses</span></a> val</code></em>);</pre>
+<p>Gets the nickname string for the <a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="type">UsbemuClasses</span></a> specified at <em class="parameter"><code>val</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-classes-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>val</p></td>
+<td class="parameter_description"><p>a UsbemuClasses.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-classes-get-string.returns"></a><h4>Returns</h4>
+<p>a string with the nickname, or <code class="literal">NULL</code> if not found. Do not free the returned value. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-classes-build-string-from-mask"></a><h3>usbemu_classes_build_string_from_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+usbemu_classes_build_string_from_mask (<em class="parameter"><code><a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="type">UsbemuClasses</span></a> mask</code></em>);</pre>
+<p>Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="type">UsbemuClasses</span></a> in <em class="parameter"><code>mask</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-classes-build-string-from-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>bitmask of UsbemuClasses values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-classes-build-string-from-mask.returns"></a><h4>Returns</h4>
+<p>a string with the list of nicknames, or <code class="literal">NULL</code> if none given. The returned value should be freed with <code class="function">g_free()</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-speeds-get-string"></a><h3>usbemu_speeds_get_string ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_speeds_get_string (<em class="parameter"><code><a class="link" href="UsbemuDevice.html#UsbemuSpeeds" title="enum UsbemuSpeeds"><span class="type">UsbemuSpeeds</span></a> val</code></em>);</pre>
+<p>Gets the nickname string for the <a class="link" href="UsbemuDevice.html#UsbemuSpeeds" title="enum UsbemuSpeeds"><span class="type">UsbemuSpeeds</span></a> specified at <em class="parameter"><code>val</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-speeds-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>val</p></td>
+<td class="parameter_description"><p>a UsbemuSpeeds.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-speeds-get-string.returns"></a><h4>Returns</h4>
+<p>a string with the nickname, or <code class="literal">NULL</code> if not found. Do not free the returned value. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-speeds-build-string-from-mask"></a><h3>usbemu_speeds_build_string_from_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+usbemu_speeds_build_string_from_mask (<em class="parameter"><code><a class="link" href="UsbemuDevice.html#UsbemuSpeeds" title="enum UsbemuSpeeds"><span class="type">UsbemuSpeeds</span></a> mask</code></em>);</pre>
+<p>Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="UsbemuDevice.html#UsbemuSpeeds" title="enum UsbemuSpeeds"><span class="type">UsbemuSpeeds</span></a> in <em class="parameter"><code>mask</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-speeds-build-string-from-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>bitmask of UsbemuSpeeds values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-speeds-build-string-from-mask.returns"></a><h4>Returns</h4>
+<p>a string with the list of nicknames, or <code class="literal">NULL</code> if none given. The returned value should be freed with <code class="function">g_free()</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-error-get-string"></a><h3>usbemu_error_get_string ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_error_get_string (<em class="parameter"><code><a class="link" href="usbemu-usbemu-errors.html#UsbemuError" title="enum UsbemuError"><span class="type">UsbemuError</span></a> val</code></em>);</pre>
+<p>Gets the nickname string for the <a class="link" href="usbemu-usbemu-errors.html#UsbemuError" title="enum UsbemuError"><span class="type">UsbemuError</span></a> specified at <em class="parameter"><code>val</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-error-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>val</p></td>
+<td class="parameter_description"><p>a UsbemuError.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-error-get-string.returns"></a><h4>Returns</h4>
+<p>a string with the nickname, or <code class="literal">NULL</code> if not found. Do not free the returned value. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-error-build-string-from-mask"></a><h3>usbemu_error_build_string_from_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+usbemu_error_build_string_from_mask (<em class="parameter"><code><a class="link" href="usbemu-usbemu-errors.html#UsbemuError" title="enum UsbemuError"><span class="type">UsbemuError</span></a> mask</code></em>);</pre>
+<p>Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="usbemu-usbemu-errors.html#UsbemuError" title="enum UsbemuError"><span class="type">UsbemuError</span></a> in <em class="parameter"><code>mask</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-error-build-string-from-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>bitmask of UsbemuError values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-error-build-string-from-mask.returns"></a><h4>Returns</h4>
+<p>a string with the list of nicknames, or <code class="literal">NULL</code> if none given. The returned value should be freed with <code class="function">g_free()</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-endpoints-get-string"></a><h3>usbemu_endpoints_get_string ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_endpoints_get_string (<em class="parameter"><code><a class="link" href="UsbemuInterface.html#UsbemuEndpoints" title="enum UsbemuEndpoints"><span class="type">UsbemuEndpoints</span></a> val</code></em>);</pre>
+<p>Gets the nickname string for the <a class="link" href="UsbemuInterface.html#UsbemuEndpoints" title="enum UsbemuEndpoints"><span class="type">UsbemuEndpoints</span></a> specified at <em class="parameter"><code>val</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-endpoints-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>val</p></td>
+<td class="parameter_description"><p>a UsbemuEndpoints.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-endpoints-get-string.returns"></a><h4>Returns</h4>
+<p>a string with the nickname, or <code class="literal">NULL</code> if not found. Do not free the returned value. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-endpoints-build-string-from-mask"></a><h3>usbemu_endpoints_build_string_from_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+usbemu_endpoints_build_string_from_mask
+                               (<em class="parameter"><code><a class="link" href="UsbemuInterface.html#UsbemuEndpoints" title="enum UsbemuEndpoints"><span class="type">UsbemuEndpoints</span></a> mask</code></em>);</pre>
+<p>Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="UsbemuInterface.html#UsbemuEndpoints" title="enum UsbemuEndpoints"><span class="type">UsbemuEndpoints</span></a> in <em class="parameter"><code>mask</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-endpoints-build-string-from-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>bitmask of UsbemuEndpoints values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-endpoints-build-string-from-mask.returns"></a><h4>Returns</h4>
+<p>a string with the list of nicknames, or <code class="literal">NULL</code> if none given. The returned value should be freed with <code class="function">g_free()</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-endpoint-directions-get-string"></a><h3>usbemu_endpoint_directions_get_string ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_endpoint_directions_get_string (<em class="parameter"><code><a class="link" href="UsbemuInterface.html#UsbemuEndpointDirections" title="enum UsbemuEndpointDirections"><span class="type">UsbemuEndpointDirections</span></a> val</code></em>);</pre>
+<p>Gets the nickname string for the <a class="link" href="UsbemuInterface.html#UsbemuEndpointDirections" title="enum UsbemuEndpointDirections"><span class="type">UsbemuEndpointDirections</span></a> specified at <em class="parameter"><code>val</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-endpoint-directions-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>val</p></td>
+<td class="parameter_description"><p>a UsbemuEndpointDirections.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-endpoint-directions-get-string.returns"></a><h4>Returns</h4>
+<p>a string with the nickname, or <code class="literal">NULL</code> if not found. Do not free the returned value. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-endpoint-directions-build-string-from-mask"></a><h3>usbemu_endpoint_directions_build_string_from_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+usbemu_endpoint_directions_build_string_from_mask
+                               (<em class="parameter"><code><a class="link" href="UsbemuInterface.html#UsbemuEndpointDirections" title="enum UsbemuEndpointDirections"><span class="type">UsbemuEndpointDirections</span></a> mask</code></em>);</pre>
+<p>Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="UsbemuInterface.html#UsbemuEndpointDirections" title="enum UsbemuEndpointDirections"><span class="type">UsbemuEndpointDirections</span></a> in <em class="parameter"><code>mask</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-endpoint-directions-build-string-from-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>bitmask of UsbemuEndpointDirections values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-endpoint-directions-build-string-from-mask.returns"></a><h4>Returns</h4>
+<p>a string with the list of nicknames, or <code class="literal">NULL</code> if none given. The returned value should be freed with <code class="function">g_free()</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-endpoint-transfers-get-string"></a><h3>usbemu_endpoint_transfers_get_string ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_endpoint_transfers_get_string (<em class="parameter"><code><a class="link" href="UsbemuInterface.html#UsbemuEndpointTransfers" title="enum UsbemuEndpointTransfers"><span class="type">UsbemuEndpointTransfers</span></a> val</code></em>);</pre>
+<p>Gets the nickname string for the <a class="link" href="UsbemuInterface.html#UsbemuEndpointTransfers" title="enum UsbemuEndpointTransfers"><span class="type">UsbemuEndpointTransfers</span></a> specified at <em class="parameter"><code>val</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-endpoint-transfers-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>val</p></td>
+<td class="parameter_description"><p>a UsbemuEndpointTransfers.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-endpoint-transfers-get-string.returns"></a><h4>Returns</h4>
+<p>a string with the nickname, or <code class="literal">NULL</code> if not found. Do not free the returned value. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-endpoint-transfers-build-string-from-mask"></a><h3>usbemu_endpoint_transfers_build_string_from_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+usbemu_endpoint_transfers_build_string_from_mask
+                               (<em class="parameter"><code><a class="link" href="UsbemuInterface.html#UsbemuEndpointTransfers" title="enum UsbemuEndpointTransfers"><span class="type">UsbemuEndpointTransfers</span></a> mask</code></em>);</pre>
+<p>Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="UsbemuInterface.html#UsbemuEndpointTransfers" title="enum UsbemuEndpointTransfers"><span class="type">UsbemuEndpointTransfers</span></a> in <em class="parameter"><code>mask</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-endpoint-transfers-build-string-from-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>bitmask of UsbemuEndpointTransfers values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-endpoint-transfers-build-string-from-mask.returns"></a><h4>Returns</h4>
+<p>a string with the list of nicknames, or <code class="literal">NULL</code> if none given. The returned value should be freed with <code class="function">g_free()</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-endpoint-isochronous-syncs-get-string"></a><h3>usbemu_endpoint_isochronous_syncs_get_string ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_endpoint_isochronous_syncs_get_string
+                               (<em class="parameter"><code><a class="link" href="UsbemuInterface.html#UsbemuEndpointIsochronousSyncs" title="enum UsbemuEndpointIsochronousSyncs"><span class="type">UsbemuEndpointIsochronousSyncs</span></a> val</code></em>);</pre>
+<p>Gets the nickname string for the <a class="link" href="UsbemuInterface.html#UsbemuEndpointIsochronousSyncs" title="enum UsbemuEndpointIsochronousSyncs"><span class="type">UsbemuEndpointIsochronousSyncs</span></a> specified at <em class="parameter"><code>val</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-endpoint-isochronous-syncs-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>val</p></td>
+<td class="parameter_description"><p>a UsbemuEndpointIsochronousSyncs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-endpoint-isochronous-syncs-get-string.returns"></a><h4>Returns</h4>
+<p>a string with the nickname, or <code class="literal">NULL</code> if not found. Do not free the returned value. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-endpoint-isochronous-syncs-build-string-from-mask"></a><h3>usbemu_endpoint_isochronous_syncs_build_string_from_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+usbemu_endpoint_isochronous_syncs_build_string_from_mask
+                               (<em class="parameter"><code><a class="link" href="UsbemuInterface.html#UsbemuEndpointIsochronousSyncs" title="enum UsbemuEndpointIsochronousSyncs"><span class="type">UsbemuEndpointIsochronousSyncs</span></a> mask</code></em>);</pre>
+<p>Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="UsbemuInterface.html#UsbemuEndpointIsochronousSyncs" title="enum UsbemuEndpointIsochronousSyncs"><span class="type">UsbemuEndpointIsochronousSyncs</span></a> in <em class="parameter"><code>mask</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-endpoint-isochronous-syncs-build-string-from-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>bitmask of UsbemuEndpointIsochronousSyncs values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-endpoint-isochronous-syncs-build-string-from-mask.returns"></a><h4>Returns</h4>
+<p>a string with the list of nicknames, or <code class="literal">NULL</code> if none given. The returned value should be freed with <code class="function">g_free()</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-endpoint-isochronous-usages-get-string"></a><h3>usbemu_endpoint_isochronous_usages_get_string ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_endpoint_isochronous_usages_get_string
+                               (<em class="parameter"><code><a class="link" href="UsbemuInterface.html#UsbemuEndpointIsochronousUsages" title="enum UsbemuEndpointIsochronousUsages"><span class="type">UsbemuEndpointIsochronousUsages</span></a> val</code></em>);</pre>
+<p>Gets the nickname string for the <a class="link" href="UsbemuInterface.html#UsbemuEndpointIsochronousUsages" title="enum UsbemuEndpointIsochronousUsages"><span class="type">UsbemuEndpointIsochronousUsages</span></a> specified at <em class="parameter"><code>val</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-endpoint-isochronous-usages-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>val</p></td>
+<td class="parameter_description"><p>a UsbemuEndpointIsochronousUsages.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-endpoint-isochronous-usages-get-string.returns"></a><h4>Returns</h4>
+<p>a string with the nickname, or <code class="literal">NULL</code> if not found. Do not free the returned value. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-endpoint-isochronous-usages-build-string-from-mask"></a><h3>usbemu_endpoint_isochronous_usages_build_string_from_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+usbemu_endpoint_isochronous_usages_build_string_from_mask
+                               (<em class="parameter"><code><a class="link" href="UsbemuInterface.html#UsbemuEndpointIsochronousUsages" title="enum UsbemuEndpointIsochronousUsages"><span class="type">UsbemuEndpointIsochronousUsages</span></a> mask</code></em>);</pre>
+<p>Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="UsbemuInterface.html#UsbemuEndpointIsochronousUsages" title="enum UsbemuEndpointIsochronousUsages"><span class="type">UsbemuEndpointIsochronousUsages</span></a> in <em class="parameter"><code>mask</code></em>
+.</p>
+<div class="refsect3">
+<a name="usbemu-endpoint-isochronous-usages-build-string-from-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>bitmask of UsbemuEndpointIsochronousUsages values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-endpoint-isochronous-usages-build-string-from-mask.returns"></a><h4>Returns</h4>
+<p>a string with the list of nicknames, or <code class="literal">NULL</code> if none given. The returned value should be freed with <code class="function">g_free()</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-enum-get-value-by-name-or-nick"></a><h3>usbemu_enum_get_value_by_name_or_nick ()</h3>
+<pre class="programlisting"><span class="returnvalue">GEnumValue</span> *
+usbemu_enum_get_value_by_name_or_nick (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
+                                       <em class="parameter"><code>const <span class="type">gchar</span> *str</code></em>);</pre>
+<p>Convenient function to search both enum name and nick.</p>
+<div class="refsect3">
+<a name="usbemu-enum-get-value-by-name-or-nick.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p><span class="type">GType</span> of target enum type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>needle string. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-enum-get-value-by-name-or-nick.returns"></a><h4>Returns</h4>
+<p><span class="type">GEnumValue</span> with specified name or nick, or <code class="literal">NULL</code>
+if not found. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-flags-from-string"></a><h3>usbemu_flags_from_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+usbemu_flags_from_string (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
+                          <em class="parameter"><code>const <span class="type">gchar</span> *str</code></em>,
+                          <em class="parameter"><code><span class="type">guint</span> *out</code></em>);</pre>
+<p>Get combined value from string. This is essentially the counter process of
+<code class="function">g_flags_to_string()</code>.</p>
+<div class="refsect3">
+<a name="usbemu-flags-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p><span class="type">GType</span> of target flags type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>string made of multiple names or nicks combined with '|'. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>output flags with values of specified names or nicks
+OR-ed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-flags-from-string.returns"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> if succeeded, <code class="literal">FALSE</code> otherwise.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="usbemu-usbemu-enums.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.27</div>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="libusbemu Reference Manual" link="index.html" author="" name="usbemu" version="2" language="c">
+  <chapters>
+    <sub name="USBEmu Overview" link="pt01.html">
+      <sub name="Object Hierarchy" link="ch01.html"/>
+      <sub name="Object Index" link="ch02.html"/>
+    </sub>
+    <sub name="API Reference" link="pt02.html">
+      <sub name="Core Classes" link="core.html">
+        <sub name="UsbemuDevice" link="UsbemuDevice.html"/>
+        <sub name="UsbemuConfiguration" link="UsbemuConfiguration.html"/>
+        <sub name="UsbemuInterface" link="UsbemuInterface.html"/>
+        <sub name="usbemu-enums" link="usbemu-usbemu-enums.html"/>
+        <sub name="usbemu-errors" link="usbemu-usbemu-errors.html"/>
+      </sub>
+      <sub name="Device Classes" link="devices.html">
+        <sub name="UsbemuVhciDevice" link="UsbemuVhciDevice.html"/>
+      </sub>
+    </sub>
+    <sub name="Appendices" link="pt03.html">
+      <sub name="API Index" link="api-index-full.html"/>
+      <sub name="Index of deprecated symbols" link="api-index-deprecated.html"/>
+      <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="usbemu_device_new ()" link="UsbemuDevice.html#usbemu-device-new"/>
+    <keyword type="function" name="usbemu_device_new_from_argv ()" link="UsbemuDevice.html#usbemu-device-new-from-argv"/>
+    <keyword type="function" name="usbemu_device_new_from_string ()" link="UsbemuDevice.html#usbemu-device-new-from-string"/>
+    <keyword type="function" name="usbemu_device_get_attached ()" link="UsbemuDevice.html#usbemu-device-get-attached"/>
+    <keyword type="function" name="usbemu_device_attach ()" link="UsbemuDevice.html#usbemu-device-attach"/>
+    <keyword type="function" name="usbemu_device_attach_finish ()" link="UsbemuDevice.html#usbemu-device-attach-finish"/>
+    <keyword type="function" name="usbemu_device_detach ()" link="UsbemuDevice.html#usbemu-device-detach"/>
+    <keyword type="function" name="usbemu_device_detach_finish ()" link="UsbemuDevice.html#usbemu-device-detach-finish"/>
+    <keyword type="function" name="usbemu_device_get_specification_num ()" link="UsbemuDevice.html#usbemu-device-get-specification-num"/>
+    <keyword type="function" name="usbemu_device_set_specification_num ()" link="UsbemuDevice.html#usbemu-device-set-specification-num"/>
+    <keyword type="function" name="usbemu_device_get_class ()" link="UsbemuDevice.html#usbemu-device-get-class"/>
+    <keyword type="function" name="usbemu_device_set_class ()" link="UsbemuDevice.html#usbemu-device-set-class"/>
+    <keyword type="function" name="usbemu_device_get_sub_class ()" link="UsbemuDevice.html#usbemu-device-get-sub-class"/>
+    <keyword type="function" name="usbemu_device_set_sub_class ()" link="UsbemuDevice.html#usbemu-device-set-sub-class"/>
+    <keyword type="function" name="usbemu_device_get_protocol ()" link="UsbemuDevice.html#usbemu-device-get-protocol"/>
+    <keyword type="function" name="usbemu_device_set_protocol ()" link="UsbemuDevice.html#usbemu-device-set-protocol"/>
+    <keyword type="function" name="usbemu_device_get_max_packet_size ()" link="UsbemuDevice.html#usbemu-device-get-max-packet-size"/>
+    <keyword type="function" name="usbemu_device_set_max_packet_size ()" link="UsbemuDevice.html#usbemu-device-set-max-packet-size"/>
+    <keyword type="function" name="usbemu_device_get_vendor_id ()" link="UsbemuDevice.html#usbemu-device-get-vendor-id"/>
+    <keyword type="function" name="usbemu_device_set_vendor_id ()" link="UsbemuDevice.html#usbemu-device-set-vendor-id"/>
+    <keyword type="function" name="usbemu_device_get_product_id ()" link="UsbemuDevice.html#usbemu-device-get-product-id"/>
+    <keyword type="function" name="usbemu_device_set_product_id ()" link="UsbemuDevice.html#usbemu-device-set-product-id"/>
+    <keyword type="function" name="usbemu_device_get_release_number ()" link="UsbemuDevice.html#usbemu-device-get-release-number"/>
+    <keyword type="function" name="usbemu_device_set_release_number ()" link="UsbemuDevice.html#usbemu-device-set-release-number"/>
+    <keyword type="function" name="usbemu_device_get_manufacturer_name ()" link="UsbemuDevice.html#usbemu-device-get-manufacturer-name"/>
+    <keyword type="function" name="usbemu_device_set_manufacturer_name ()" link="UsbemuDevice.html#usbemu-device-set-manufacturer-name"/>
+    <keyword type="function" name="usbemu_device_get_product_name ()" link="UsbemuDevice.html#usbemu-device-get-product-name"/>
+    <keyword type="function" name="usbemu_device_set_product_name ()" link="UsbemuDevice.html#usbemu-device-set-product-name"/>
+    <keyword type="function" name="usbemu_device_get_serial ()" link="UsbemuDevice.html#usbemu-device-get-serial"/>
+    <keyword type="function" name="usbemu_device_set_serial ()" link="UsbemuDevice.html#usbemu-device-set-serial"/>
+    <keyword type="function" name="usbemu_device_get_speed ()" link="UsbemuDevice.html#usbemu-device-get-speed"/>
+    <keyword type="function" name="usbemu_device_add_configuration ()" link="UsbemuDevice.html#usbemu-device-add-configuration"/>
+    <keyword type="function" name="usbemu_device_get_configuration ()" link="UsbemuDevice.html#usbemu-device-get-configuration"/>
+    <keyword type="function" name="usbemu_device_get_configurations ()" link="UsbemuDevice.html#usbemu-device-get-configurations"/>
+    <keyword type="function" name="usbemu_device_get_n_configurations ()" link="UsbemuDevice.html#usbemu-device-get-n-configurations"/>
+    <keyword type="macro" name="USBEMU_TYPE_DEVICE" link="UsbemuDevice.html#USBEMU-TYPE-DEVICE:CAPS"/>
+    <keyword type="macro" name="USBEMU_DEVICE_PROP_ATTACHED" link="UsbemuDevice.html#USBEMU-DEVICE-PROP-ATTACHED:CAPS"/>
+    <keyword type="macro" name="USBEMU_DEVICE_SIGNAL_ATTACHED" link="UsbemuDevice.html#USBEMU-DEVICE-SIGNAL-ATTACHED:CAPS"/>
+    <keyword type="macro" name="USBEMU_DEVICE_SIGNAL_DETACHED" link="UsbemuDevice.html#USBEMU-DEVICE-SIGNAL-DETACHED:CAPS"/>
+    <keyword type="struct" name="struct UsbemuDeviceClass" link="UsbemuDevice.html#UsbemuDeviceClass"/>
+    <keyword type="enum" name="enum UsbemuClasses" link="UsbemuDevice.html#UsbemuClasses"/>
+    <keyword type="macro" name="USBEMU_SUB_CLASS_USE_INTERFACE_DESCRIPTOR" link="UsbemuDevice.html#USBEMU-SUB-CLASS-USE-INTERFACE-DESCRIPTOR:CAPS"/>
+    <keyword type="macro" name="USBEMU_PROTOCOL_USE_INTERFACE_DESCRIPTOR" link="UsbemuDevice.html#USBEMU-PROTOCOL-USE-INTERFACE-DESCRIPTOR:CAPS"/>
+    <keyword type="macro" name="USBEMU_PROTOCOL_VENDOR_SPECIFIC" link="UsbemuDevice.html#USBEMU-PROTOCOL-VENDOR-SPECIFIC:CAPS"/>
+    <keyword type="enum" name="enum UsbemuSpeeds" link="UsbemuDevice.html#UsbemuSpeeds"/>
+    <keyword type="struct" name="UsbemuDevice" link="UsbemuDevice.html#UsbemuDevice-struct"/>
+    <keyword type="property" name="The “attached” property" link="UsbemuDevice.html#UsbemuDevice--attached"/>
+    <keyword type="signal" name="The “attached” signal" link="UsbemuDevice.html#UsbemuDevice-attached"/>
+    <keyword type="signal" name="The “detached” signal" link="UsbemuDevice.html#UsbemuDevice-detached"/>
+    <keyword type="function" name="usbemu_configuration_new ()" link="UsbemuConfiguration.html#usbemu-configuration-new"/>
+    <keyword type="function" name="usbemu_configuration_new_full ()" link="UsbemuConfiguration.html#usbemu-configuration-new-full"/>
+    <keyword type="function" name="usbemu_configuration_new_from_argv ()" link="UsbemuConfiguration.html#usbemu-configuration-new-from-argv"/>
+    <keyword type="function" name="usbemu_configuration_new_from_string ()" link="UsbemuConfiguration.html#usbemu-configuration-new-from-string"/>
+    <keyword type="function" name="usbemu_configuration_get_configuration_value ()" link="UsbemuConfiguration.html#usbemu-configuration-get-configuration-value"/>
+    <keyword type="function" name="usbemu_configuration_get_name ()" link="UsbemuConfiguration.html#usbemu-configuration-get-name"/>
+    <keyword type="function" name="usbemu_configuration_set_name ()" link="UsbemuConfiguration.html#usbemu-configuration-set-name"/>
+    <keyword type="function" name="usbemu_configuration_get_attributes ()" link="UsbemuConfiguration.html#usbemu-configuration-get-attributes"/>
+    <keyword type="function" name="usbemu_configuration_set_attributes ()" link="UsbemuConfiguration.html#usbemu-configuration-set-attributes"/>
+    <keyword type="function" name="usbemu_configuration_get_max_power ()" link="UsbemuConfiguration.html#usbemu-configuration-get-max-power"/>
+    <keyword type="function" name="usbemu_configuration_set_max_power ()" link="UsbemuConfiguration.html#usbemu-configuration-set-max-power"/>
+    <keyword type="function" name="usbemu_configuration_get_device ()" link="UsbemuConfiguration.html#usbemu-configuration-get-device"/>
+    <keyword type="function" name="usbemu_configuration_add_alternate_interfaces ()" link="UsbemuConfiguration.html#usbemu-configuration-add-alternate-interfaces"/>
+    <keyword type="function" name="usbemu_configuration_get_alternate_interfaces ()" link="UsbemuConfiguration.html#usbemu-configuration-get-alternate-interfaces"/>
+    <keyword type="function" name="usbemu_configuration_get_n_alternate_interfaces ()" link="UsbemuConfiguration.html#usbemu-configuration-get-n-alternate-interfaces"/>
+    <keyword type="macro" name="USBEMU_TYPE_CONFIGURATION" link="UsbemuConfiguration.html#USBEMU-TYPE-CONFIGURATION:CAPS"/>
+    <keyword type="macro" name="USBEMU_CONFIGURATION_PROP_NAME" link="UsbemuConfiguration.html#USBEMU-CONFIGURATION-PROP-NAME:CAPS"/>
+    <keyword type="macro" name="USBEMU_CONFIGURATION_PROP_ATTRIBUTES" link="UsbemuConfiguration.html#USBEMU-CONFIGURATION-PROP-ATTRIBUTES:CAPS"/>
+    <keyword type="macro" name="USBEMU_CONFIGURATION_PROP_MAX_POWER" link="UsbemuConfiguration.html#USBEMU-CONFIGURATION-PROP-MAX-POWER:CAPS"/>
+    <keyword type="enum" name="enum UsbemuConfigurationAttributes" link="UsbemuConfiguration.html#UsbemuConfigurationAttributes"/>
+    <keyword type="struct" name="UsbemuConfiguration" link="UsbemuConfiguration.html#UsbemuConfiguration-struct"/>
+    <keyword type="property" name="The “attributes” property" link="UsbemuConfiguration.html#UsbemuConfiguration--attributes"/>
+    <keyword type="property" name="The “max-power” property" link="UsbemuConfiguration.html#UsbemuConfiguration--max-power"/>
+    <keyword type="property" name="The “name” property" link="UsbemuConfiguration.html#UsbemuConfiguration--name"/>
+    <keyword type="function" name="usbemu_interface_new ()" link="UsbemuInterface.html#usbemu-interface-new"/>
+    <keyword type="function" name="usbemu_interface_new_full ()" link="UsbemuInterface.html#usbemu-interface-new-full"/>
+    <keyword type="function" name="usbemu_interface_new_from_argv ()" link="UsbemuInterface.html#usbemu-interface-new-from-argv"/>
+    <keyword type="function" name="usbemu_interface_new_from_string ()" link="UsbemuInterface.html#usbemu-interface-new-from-string"/>
+    <keyword type="function" name="usbemu_interface_get_interface_number ()" link="UsbemuInterface.html#usbemu-interface-get-interface-number"/>
+    <keyword type="function" name="usbemu_interface_get_alternate_setting ()" link="UsbemuInterface.html#usbemu-interface-get-alternate-setting"/>
+    <keyword type="function" name="usbemu_interface_get_name ()" link="UsbemuInterface.html#usbemu-interface-get-name"/>
+    <keyword type="function" name="usbemu_interface_set_name ()" link="UsbemuInterface.html#usbemu-interface-set-name"/>
+    <keyword type="function" name="usbemu_interface_get_class ()" link="UsbemuInterface.html#usbemu-interface-get-class"/>
+    <keyword type="function" name="usbemu_interface_set_class ()" link="UsbemuInterface.html#usbemu-interface-set-class"/>
+    <keyword type="function" name="usbemu_interface_get_sub_class ()" link="UsbemuInterface.html#usbemu-interface-get-sub-class"/>
+    <keyword type="function" name="usbemu_interface_set_sub_class ()" link="UsbemuInterface.html#usbemu-interface-set-sub-class"/>
+    <keyword type="function" name="usbemu_interface_get_protocol ()" link="UsbemuInterface.html#usbemu-interface-get-protocol"/>
+    <keyword type="function" name="usbemu_interface_set_protocol ()" link="UsbemuInterface.html#usbemu-interface-set-protocol"/>
+    <keyword type="function" name="usbemu_interface_add_endpoint_entries ()" link="UsbemuInterface.html#usbemu-interface-add-endpoint-entries"/>
+    <keyword type="function" name="usbemu_interface_get_endpoint_entries ()" link="UsbemuInterface.html#usbemu-interface-get-endpoint-entries"/>
+    <keyword type="function" name="usbemu_interface_get_configuration ()" link="UsbemuInterface.html#usbemu-interface-get-configuration"/>
+    <keyword type="macro" name="USBEMU_TYPE_INTERFACE" link="UsbemuInterface.html#USBEMU-TYPE-INTERFACE:CAPS"/>
+    <keyword type="macro" name="USBEMU_INTERFACE_PROP_INTERFACE_NUMBER" link="UsbemuInterface.html#USBEMU-INTERFACE-PROP-INTERFACE-NUMBER:CAPS"/>
+    <keyword type="macro" name="USBEMU_INTERFACE_PROP_ALTERNATE_SETTING" link="UsbemuInterface.html#USBEMU-INTERFACE-PROP-ALTERNATE-SETTING:CAPS"/>
+    <keyword type="macro" name="USBEMU_INTERFACE_PROP_NAME" link="UsbemuInterface.html#USBEMU-INTERFACE-PROP-NAME:CAPS"/>
+    <keyword type="macro" name="USBEMU_INTERFACE_PROP_CLASS" link="UsbemuInterface.html#USBEMU-INTERFACE-PROP-CLASS:CAPS"/>
+    <keyword type="macro" name="USBEMU_INTERFACE_PROP_SUB_CLASS" link="UsbemuInterface.html#USBEMU-INTERFACE-PROP-SUB-CLASS:CAPS"/>
+    <keyword type="macro" name="USBEMU_INTERFACE_PROP_PROTOCOL" link="UsbemuInterface.html#USBEMU-INTERFACE-PROP-PROTOCOL:CAPS"/>
+    <keyword type="struct" name="struct UsbemuInterfaceClass" link="UsbemuInterface.html#UsbemuInterfaceClass"/>
+    <keyword type="enum" name="enum UsbemuEndpoints" link="UsbemuInterface.html#UsbemuEndpoints"/>
+    <keyword type="macro" name="USBEMU_NUM_ENDPOINTS" link="UsbemuInterface.html#USBEMU-NUM-ENDPOINTS:CAPS"/>
+    <keyword type="enum" name="enum UsbemuEndpointDirections" link="UsbemuInterface.html#UsbemuEndpointDirections"/>
+    <keyword type="enum" name="enum UsbemuEndpointTransfers" link="UsbemuInterface.html#UsbemuEndpointTransfers"/>
+    <keyword type="enum" name="enum UsbemuEndpointIsochronousSyncs" link="UsbemuInterface.html#UsbemuEndpointIsochronousSyncs"/>
+    <keyword type="macro" name="USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_DONT_CARE" link="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-SYNC-DONT-CARE:CAPS"/>
+    <keyword type="enum" name="enum UsbemuEndpointIsochronousUsages" link="UsbemuInterface.html#UsbemuEndpointIsochronousUsages"/>
+    <keyword type="macro" name="USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_DONT_CARE" link="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-USAGE-DONT-CARE:CAPS"/>
+    <keyword type="struct" name="UsbemuEndpointEntry" link="UsbemuInterface.html#UsbemuEndpointEntry"/>
+    <keyword type="struct" name="UsbemuInterface" link="UsbemuInterface.html#UsbemuInterface-struct"/>
+    <keyword type="property" name="The “alternate-setting” property" link="UsbemuInterface.html#UsbemuInterface--alternate-setting"/>
+    <keyword type="property" name="The “class” property" link="UsbemuInterface.html#UsbemuInterface--class"/>
+    <keyword type="property" name="The “interface-number” property" link="UsbemuInterface.html#UsbemuInterface--interface-number"/>
+    <keyword type="property" name="The “name” property" link="UsbemuInterface.html#UsbemuInterface--name"/>
+    <keyword type="property" name="The “protocol” property" link="UsbemuInterface.html#UsbemuInterface--protocol"/>
+    <keyword type="property" name="The “sub-class” property" link="UsbemuInterface.html#UsbemuInterface--sub-class"/>
+    <keyword type="function" name="usbemu_configuration_attributes_get_string ()" link="usbemu-usbemu-enums.html#usbemu-configuration-attributes-get-string"/>
+    <keyword type="function" name="usbemu_configuration_attributes_build_string_from_mask ()" link="usbemu-usbemu-enums.html#usbemu-configuration-attributes-build-string-from-mask"/>
+    <keyword type="function" name="usbemu_classes_get_string ()" link="usbemu-usbemu-enums.html#usbemu-classes-get-string"/>
+    <keyword type="function" name="usbemu_classes_build_string_from_mask ()" link="usbemu-usbemu-enums.html#usbemu-classes-build-string-from-mask"/>
+    <keyword type="function" name="usbemu_speeds_get_string ()" link="usbemu-usbemu-enums.html#usbemu-speeds-get-string"/>
+    <keyword type="function" name="usbemu_speeds_build_string_from_mask ()" link="usbemu-usbemu-enums.html#usbemu-speeds-build-string-from-mask"/>
+    <keyword type="function" name="usbemu_error_get_string ()" link="usbemu-usbemu-enums.html#usbemu-error-get-string"/>
+    <keyword type="function" name="usbemu_error_build_string_from_mask ()" link="usbemu-usbemu-enums.html#usbemu-error-build-string-from-mask"/>
+    <keyword type="function" name="usbemu_endpoints_get_string ()" link="usbemu-usbemu-enums.html#usbemu-endpoints-get-string"/>
+    <keyword type="function" name="usbemu_endpoints_build_string_from_mask ()" link="usbemu-usbemu-enums.html#usbemu-endpoints-build-string-from-mask"/>
+    <keyword type="function" name="usbemu_endpoint_directions_get_string ()" link="usbemu-usbemu-enums.html#usbemu-endpoint-directions-get-string"/>
+    <keyword type="function" name="usbemu_endpoint_directions_build_string_from_mask ()" link="usbemu-usbemu-enums.html#usbemu-endpoint-directions-build-string-from-mask"/>
+    <keyword type="function" name="usbemu_endpoint_transfers_get_string ()" link="usbemu-usbemu-enums.html#usbemu-endpoint-transfers-get-string"/>
+    <keyword type="function" name="usbemu_endpoint_transfers_build_string_from_mask ()" link="usbemu-usbemu-enums.html#usbemu-endpoint-transfers-build-string-from-mask"/>
+    <keyword type="function" name="usbemu_endpoint_isochronous_syncs_get_string ()" link="usbemu-usbemu-enums.html#usbemu-endpoint-isochronous-syncs-get-string"/>
+    <keyword type="function" name="usbemu_endpoint_isochronous_syncs_build_string_from_mask ()" link="usbemu-usbemu-enums.html#usbemu-endpoint-isochronous-syncs-build-string-from-mask"/>
+    <keyword type="function" name="usbemu_endpoint_isochronous_usages_get_string ()" link="usbemu-usbemu-enums.html#usbemu-endpoint-isochronous-usages-get-string"/>
+    <keyword type="function" name="usbemu_endpoint_isochronous_usages_build_string_from_mask ()" link="usbemu-usbemu-enums.html#usbemu-endpoint-isochronous-usages-build-string-from-mask"/>
+    <keyword type="function" name="usbemu_enum_get_value_by_name_or_nick ()" link="usbemu-usbemu-enums.html#usbemu-enum-get-value-by-name-or-nick"/>
+    <keyword type="function" name="usbemu_flags_from_string ()" link="usbemu-usbemu-enums.html#usbemu-flags-from-string"/>
+    <keyword type="function" name="usbemu_error_quark ()" link="usbemu-usbemu-errors.html#usbemu-error-quark"/>
+    <keyword type="enum" name="enum UsbemuError" link="usbemu-usbemu-errors.html#UsbemuError"/>
+    <keyword type="macro" name="USBEMU_ERROR" link="usbemu-usbemu-errors.html#USBEMU-ERROR:CAPS"/>
+    <keyword type="function" name="usbemu_vhci_device_new ()" link="UsbemuVhciDevice.html#usbemu-vhci-device-new"/>
+    <keyword type="function" name="usbemu_vhci_device_get_devid ()" link="UsbemuVhciDevice.html#usbemu-vhci-device-get-devid"/>
+    <keyword type="function" name="usbemu_vhci_device_set_devid ()" link="UsbemuVhciDevice.html#usbemu-vhci-device-set-devid"/>
+    <keyword type="function" name="usbemu_vhci_device_get_port ()" link="UsbemuVhciDevice.html#usbemu-vhci-device-get-port"/>
+    <keyword type="function" name="usbemu_vhci_device_detach_port ()" link="UsbemuVhciDevice.html#usbemu-vhci-device-detach-port"/>
+    <keyword type="macro" name="USBEMU_TYPE_VHCI_DEVICE" link="UsbemuVhciDevice.html#USBEMU-TYPE-VHCI-DEVICE:CAPS"/>
+    <keyword type="macro" name="USBEMU_VHCI_DEVICE_PROP_DEVID" link="UsbemuVhciDevice.html#USBEMU-VHCI-DEVICE-PROP-DEVID:CAPS"/>
+    <keyword type="macro" name="USBEMU_VHCI_DEVICE_PROP_PORT" link="UsbemuVhciDevice.html#USBEMU-VHCI-DEVICE-PROP-PORT:CAPS"/>
+    <keyword type="macro" name="USBEMU_VHCI_DEVICE_PORT_UNSPECIFIED" link="UsbemuVhciDevice.html#USBEMU-VHCI-DEVICE-PORT-UNSPECIFIED:CAPS"/>
+    <keyword type="struct" name="struct UsbemuVhciDeviceClass" link="UsbemuVhciDevice.html#UsbemuVhciDeviceClass"/>
+    <keyword type="struct" name="UsbemuVhciDevice" link="UsbemuVhciDevice.html#UsbemuVhciDevice-struct"/>
+    <keyword type="property" name="The “devid” property" link="UsbemuVhciDevice.html#UsbemuVhciDevice--devid"/>
+    <keyword type="property" name="The “port” property" link="UsbemuVhciDevice.html#UsbemuVhciDevice--port"/>
+    <keyword type="constant" name="USBEMU_CLASS_USE_INTERFACE_DESCRIPTOR" link="UsbemuDevice.html#USBEMU-CLASS-USE-INTERFACE-DESCRIPTOR:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_AUDIO" link="UsbemuDevice.html#USBEMU-CLASS-AUDIO:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_COMMUNICATIONS_AND_CDC_CONTROL" link="UsbemuDevice.html#USBEMU-CLASS-COMMUNICATIONS-AND-CDC-CONTROL:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_HID" link="UsbemuDevice.html#USBEMU-CLASS-HID:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_PHYSICAL" link="UsbemuDevice.html#USBEMU-CLASS-PHYSICAL:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_IMAGE" link="UsbemuDevice.html#USBEMU-CLASS-IMAGE:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_PRINTER" link="UsbemuDevice.html#USBEMU-CLASS-PRINTER:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_MASS_STORAGE" link="UsbemuDevice.html#USBEMU-CLASS-MASS-STORAGE:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_HUB" link="UsbemuDevice.html#USBEMU-CLASS-HUB:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_CDC_DATA" link="UsbemuDevice.html#USBEMU-CLASS-CDC-DATA:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_SMART_CARD" link="UsbemuDevice.html#USBEMU-CLASS-SMART-CARD:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_CONTENT_SECURITY" link="UsbemuDevice.html#USBEMU-CLASS-CONTENT-SECURITY:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_VIDEO" link="UsbemuDevice.html#USBEMU-CLASS-VIDEO:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_PERSONAL_HEALTHCARE" link="UsbemuDevice.html#USBEMU-CLASS-PERSONAL-HEALTHCARE:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_AUDIO_VIDEO" link="UsbemuDevice.html#USBEMU-CLASS-AUDIO-VIDEO:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_BILLBOARD" link="UsbemuDevice.html#USBEMU-CLASS-BILLBOARD:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_USB_TYPE_C_BRIDGE" link="UsbemuDevice.html#USBEMU-CLASS-USB-TYPE-C-BRIDGE:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_DIAGNOSTIC" link="UsbemuDevice.html#USBEMU-CLASS-DIAGNOSTIC:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_WIRELESS_CONTROLLER" link="UsbemuDevice.html#USBEMU-CLASS-WIRELESS-CONTROLLER:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_MISCELLANEOUS" link="UsbemuDevice.html#USBEMU-CLASS-MISCELLANEOUS:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_APPLICATION_SPECIFIC" link="UsbemuDevice.html#USBEMU-CLASS-APPLICATION-SPECIFIC:CAPS"/>
+    <keyword type="constant" name="USBEMU_CLASS_VENDOR_SPECIFIC" link="UsbemuDevice.html#USBEMU-CLASS-VENDOR-SPECIFIC:CAPS"/>
+    <keyword type="constant" name="USBEMU_SPEED_UNKNOWN" link="UsbemuDevice.html#USBEMU-SPEED-UNKNOWN:CAPS"/>
+    <keyword type="constant" name="USBEMU_SPEED_LOW" link="UsbemuDevice.html#USBEMU-SPEED-LOW:CAPS"/>
+    <keyword type="constant" name="USBEMU_SPEED_FULL" link="UsbemuDevice.html#USBEMU-SPEED-FULL:CAPS"/>
+    <keyword type="constant" name="USBEMU_SPEED_HIGH" link="UsbemuDevice.html#USBEMU-SPEED-HIGH:CAPS"/>
+    <keyword type="constant" name="USBEMU_SPEED_WIRELESS" link="UsbemuDevice.html#USBEMU-SPEED-WIRELESS:CAPS"/>
+    <keyword type="constant" name="USBEMU_SPEED_SUPER" link="UsbemuDevice.html#USBEMU-SPEED-SUPER:CAPS"/>
+    <keyword type="constant" name="USBEMU_SPEED_SUPER_PLUS" link="UsbemuDevice.html#USBEMU-SPEED-SUPER-PLUS:CAPS"/>
+    <keyword type="constant" name="USBEMU_CONFIGURATION_ATTR_RESERVED_0" link="UsbemuConfiguration.html#USBEMU-CONFIGURATION-ATTR-RESERVED-0:CAPS"/>
+    <keyword type="constant" name="USBEMU_CONFIGURATION_ATTR_RESERVED_1" link="UsbemuConfiguration.html#USBEMU-CONFIGURATION-ATTR-RESERVED-1:CAPS"/>
+    <keyword type="constant" name="USBEMU_CONFIGURATION_ATTR_RESERVED_2" link="UsbemuConfiguration.html#USBEMU-CONFIGURATION-ATTR-RESERVED-2:CAPS"/>
+    <keyword type="constant" name="USBEMU_CONFIGURATION_ATTR_RESERVED_3" link="UsbemuConfiguration.html#USBEMU-CONFIGURATION-ATTR-RESERVED-3:CAPS"/>
+    <keyword type="constant" name="USBEMU_CONFIGURATION_ATTR_RESERVED_4" link="UsbemuConfiguration.html#USBEMU-CONFIGURATION-ATTR-RESERVED-4:CAPS"/>
+    <keyword type="constant" name="USBEMU_CONFIGURATION_ATTR_REMOTE_WAKEUP" link="UsbemuConfiguration.html#USBEMU-CONFIGURATION-ATTR-REMOTE-WAKEUP:CAPS"/>
+    <keyword type="constant" name="USBEMU_CONFIGURATION_ATTR_SELF_POWER" link="UsbemuConfiguration.html#USBEMU-CONFIGURATION-ATTR-SELF-POWER:CAPS"/>
+    <keyword type="constant" name="USBEMU_CONFIGURATION_ATTR_RESERVED_7" link="UsbemuConfiguration.html#USBEMU-CONFIGURATION-ATTR-RESERVED-7:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_CTL" link="UsbemuInterface.html#USBEMU-EP-CTL:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_1" link="UsbemuInterface.html#USBEMU-EP-1:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_2" link="UsbemuInterface.html#USBEMU-EP-2:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_3" link="UsbemuInterface.html#USBEMU-EP-3:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_4" link="UsbemuInterface.html#USBEMU-EP-4:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_5" link="UsbemuInterface.html#USBEMU-EP-5:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_6" link="UsbemuInterface.html#USBEMU-EP-6:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_7" link="UsbemuInterface.html#USBEMU-EP-7:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_8" link="UsbemuInterface.html#USBEMU-EP-8:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_9" link="UsbemuInterface.html#USBEMU-EP-9:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_10" link="UsbemuInterface.html#USBEMU-EP-10:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_11" link="UsbemuInterface.html#USBEMU-EP-11:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_12" link="UsbemuInterface.html#USBEMU-EP-12:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_13" link="UsbemuInterface.html#USBEMU-EP-13:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_14" link="UsbemuInterface.html#USBEMU-EP-14:CAPS"/>
+    <keyword type="constant" name="USBEMU_EP_15" link="UsbemuInterface.html#USBEMU-EP-15:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_DIRECTION_OUT" link="UsbemuInterface.html#USBEMU-ENDPOINT-DIRECTION-OUT:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_DIRECTION_IN" link="UsbemuInterface.html#USBEMU-ENDPOINT-DIRECTION-IN:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_TRANSFER_CONTROL" link="UsbemuInterface.html#USBEMU-ENDPOINT-TRANSFER-CONTROL:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_TRANSFER_ISOCHRONOUS" link="UsbemuInterface.html#USBEMU-ENDPOINT-TRANSFER-ISOCHRONOUS:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_TRANSFER_BULK" link="UsbemuInterface.html#USBEMU-ENDPOINT-TRANSFER-BULK:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_TRANSFER_INTERRUPT" link="UsbemuInterface.html#USBEMU-ENDPOINT-TRANSFER-INTERRUPT:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_NONE" link="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-SYNC-NONE:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_ASYNC" link="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-SYNC-ASYNC:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_ADAPTIVE" link="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-SYNC-ADAPTIVE:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_SYNC" link="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-SYNC-SYNC:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_DATA" link="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-USAGE-DATA:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_FEEDBACK" link="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-USAGE-FEEDBACK:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_IMPLICIT_FEEDBACK_DATA" link="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-USAGE-IMPLICIT-FEEDBACK-DATA:CAPS"/>
+    <keyword type="constant" name="USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_RESERVED" link="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-USAGE-RESERVED:CAPS"/>
+    <keyword type="constant" name="USBEMU_ERROR_FAILED" link="usbemu-usbemu-errors.html#USBEMU-ERROR-FAILED:CAPS"/>
+    <keyword type="constant" name="USBEMU_ERROR_INVALID_TYPE" link="usbemu-usbemu-errors.html#USBEMU-ERROR-INVALID-TYPE:CAPS"/>
+    <keyword type="constant" name="USBEMU_ERROR_SYNTAX_ERROR" link="usbemu-usbemu-errors.html#USBEMU-ERROR-SYNTAX-ERROR:CAPS"/>
+    <keyword type="constant" name="USBEMU_ERROR_NOT_SUPPORTED" link="usbemu-usbemu-errors.html#USBEMU-ERROR-NOT-SUPPORTED:CAPS"/>
+    <keyword type="constant" name="USBEMU_ERROR_INVALID_STATE" link="usbemu-usbemu-errors.html#USBEMU-ERROR-INVALID-STATE:CAPS"/>
+    <keyword type="constant" name="USBEMU_ERROR_RESOURCE_UNAVAILABLE" link="usbemu-usbemu-errors.html#USBEMU-ERROR-RESOURCE-UNAVAILABLE:CAPS"/>
+    <keyword type="member" name="UsbemuDeviceClass.attached" link="UsbemuDevice.html#UsbemuDeviceClass.attached"/>
+    <keyword type="member" name="UsbemuDeviceClass.detached" link="UsbemuDevice.html#UsbemuDeviceClass.detached"/>
+    <keyword type="member" name="UsbemuDeviceClass.attach-async" link="UsbemuDevice.html#UsbemuDeviceClass.attach-async"/>
+    <keyword type="member" name="UsbemuDeviceClass.detach-async" link="UsbemuDevice.html#UsbemuDeviceClass.detach-async"/>
+    <keyword type="member" name="UsbemuEndpointEntry.endpoint-number" link="UsbemuInterface.html#UsbemuEndpointEntry.endpoint-number"/>
+    <keyword type="member" name="UsbemuEndpointEntry.direction" link="UsbemuInterface.html#UsbemuEndpointEntry.direction"/>
+    <keyword type="member" name="UsbemuEndpointEntry.transfer" link="UsbemuInterface.html#UsbemuEndpointEntry.transfer"/>
+    <keyword type="member" name="UsbemuEndpointEntry.attributes" link="UsbemuInterface.html#UsbemuEndpointEntry.attributes"/>
+    <keyword type="member" name="UsbemuEndpointEntry.max-packet-size" link="UsbemuInterface.html#UsbemuEndpointEntry.max-packet-size"/>
+    <keyword type="member" name="UsbemuEndpointEntry.additional-transactions" link="UsbemuInterface.html#UsbemuEndpointEntry.additional-transactions"/>
+    <keyword type="member" name="UsbemuEndpointEntry.interval" link="UsbemuInterface.html#UsbemuEndpointEntry.interval"/>
+  </functions>
+</book>

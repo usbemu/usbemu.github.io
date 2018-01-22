@@ -1,0 +1,2025 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>UsbemuDevice: libusbemu Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libusbemu Reference Manual">
+<link rel="up" href="core.html" title="Core Classes">
+<link rel="prev" href="core.html" title="Core Classes">
+<link rel="next" href="UsbemuConfiguration.html" title="UsbemuConfiguration">
+<meta name="generator" content="GTK-Doc V1.27 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#UsbemuDevice.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#UsbemuDevice.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#UsbemuDevice.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#UsbemuDevice.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="core.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="UsbemuConfiguration.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="UsbemuDevice"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="UsbemuDevice.top_of_page"></a>UsbemuDevice</span></h2>
+<p>UsbemuDevice — USB device emulation class</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="UsbemuDevice.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="returnvalue">UsbemuDevice</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-new" title="usbemu_device_new ()">usbemu_device_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="returnvalue">UsbemuDevice</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-new-from-argv" title="usbemu_device_new_from_argv ()">usbemu_device_new_from_argv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="returnvalue">UsbemuDevice</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-new-from-string" title="usbemu_device_new_from_string ()">usbemu_device_new_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-attached" title="usbemu_device_get_attached ()">usbemu_device_get_attached</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-attach" title="usbemu_device_attach ()">usbemu_device_attach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-attach-finish" title="usbemu_device_attach_finish ()">usbemu_device_attach_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-detach" title="usbemu_device_detach ()">usbemu_device_detach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-detach-finish" title="usbemu_device_detach_finish ()">usbemu_device_detach_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint16</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-specification-num" title="usbemu_device_get_specification_num ()">usbemu_device_get_specification_num</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-set-specification-num" title="usbemu_device_set_specification_num ()">usbemu_device_set_specification_num</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="returnvalue">UsbemuClasses</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-class" title="usbemu_device_get_class ()">usbemu_device_get_class</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-set-class" title="usbemu_device_set_class ()">usbemu_device_set_class</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint8</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-sub-class" title="usbemu_device_get_sub_class ()">usbemu_device_get_sub_class</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-set-sub-class" title="usbemu_device_set_sub_class ()">usbemu_device_set_sub_class</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint8</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-protocol" title="usbemu_device_get_protocol ()">usbemu_device_get_protocol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-set-protocol" title="usbemu_device_set_protocol ()">usbemu_device_set_protocol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint8</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-max-packet-size" title="usbemu_device_get_max_packet_size ()">usbemu_device_get_max_packet_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-set-max-packet-size" title="usbemu_device_set_max_packet_size ()">usbemu_device_set_max_packet_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint16</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-vendor-id" title="usbemu_device_get_vendor_id ()">usbemu_device_get_vendor_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-set-vendor-id" title="usbemu_device_set_vendor_id ()">usbemu_device_set_vendor_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint16</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-product-id" title="usbemu_device_get_product_id ()">usbemu_device_get_product_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-set-product-id" title="usbemu_device_set_product_id ()">usbemu_device_set_product_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint16</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-release-number" title="usbemu_device_get_release_number ()">usbemu_device_get_release_number</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-set-release-number" title="usbemu_device_set_release_number ()">usbemu_device_set_release_number</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-manufacturer-name" title="usbemu_device_get_manufacturer_name ()">usbemu_device_get_manufacturer_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-set-manufacturer-name" title="usbemu_device_set_manufacturer_name ()">usbemu_device_set_manufacturer_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-product-name" title="usbemu_device_get_product_name ()">usbemu_device_get_product_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-set-product-name" title="usbemu_device_set_product_name ()">usbemu_device_set_product_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-serial" title="usbemu_device_get_serial ()">usbemu_device_get_serial</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-set-serial" title="usbemu_device_set_serial ()">usbemu_device_set_serial</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="UsbemuDevice.html#UsbemuSpeeds" title="enum UsbemuSpeeds"><span class="returnvalue">UsbemuSpeeds</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-speed" title="usbemu_device_get_speed ()">usbemu_device_get_speed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-add-configuration" title="usbemu_device_add_configuration ()">usbemu_device_add_configuration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">struct <a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="returnvalue">_UsbemuConfiguration</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-configuration" title="usbemu_device_get_configuration ()">usbemu_device_get_configuration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GSList</span> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-configurations" title="usbemu_device_get_configurations ()">usbemu_device_get_configurations</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuDevice.html#usbemu-device-get-n-configurations" title="usbemu_device_get_n_configurations ()">usbemu_device_get_n_configurations</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="UsbemuDevice.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="UsbemuDevice.html#UsbemuDevice--attached" title="The “attached” property">attached</a></td>
+<td class="property_flags">Read</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="UsbemuDevice.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="UsbemuDevice.html#UsbemuDevice-attached" title="The “attached” signal">attached</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="UsbemuDevice.html#UsbemuDevice-detached" title="The “detached” signal">detached</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="UsbemuDevice.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuDevice.html#USBEMU-TYPE-DEVICE:CAPS" title="USBEMU_TYPE_DEVICE">USBEMU_TYPE_DEVICE</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuDevice.html#USBEMU-DEVICE-PROP-ATTACHED:CAPS" title="USBEMU_DEVICE_PROP_ATTACHED">USBEMU_DEVICE_PROP_ATTACHED</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuDevice.html#USBEMU-DEVICE-SIGNAL-ATTACHED:CAPS" title="USBEMU_DEVICE_SIGNAL_ATTACHED">USBEMU_DEVICE_SIGNAL_ATTACHED</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuDevice.html#USBEMU-DEVICE-SIGNAL-DETACHED:CAPS" title="USBEMU_DEVICE_SIGNAL_DETACHED">USBEMU_DEVICE_SIGNAL_DETACHED</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="UsbemuDevice.html#UsbemuDeviceClass" title="struct UsbemuDeviceClass">UsbemuDeviceClass</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses">UsbemuClasses</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuDevice.html#USBEMU-SUB-CLASS-USE-INTERFACE-DESCRIPTOR:CAPS" title="USBEMU_SUB_CLASS_USE_INTERFACE_DESCRIPTOR">USBEMU_SUB_CLASS_USE_INTERFACE_DESCRIPTOR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuDevice.html#USBEMU-PROTOCOL-USE-INTERFACE-DESCRIPTOR:CAPS" title="USBEMU_PROTOCOL_USE_INTERFACE_DESCRIPTOR">USBEMU_PROTOCOL_USE_INTERFACE_DESCRIPTOR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuDevice.html#USBEMU-PROTOCOL-VENDOR-SPECIFIC:CAPS" title="USBEMU_PROTOCOL_VENDOR_SPECIFIC">USBEMU_PROTOCOL_VENDOR_SPECIFIC</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="UsbemuDevice.html#UsbemuSpeeds" title="enum UsbemuSpeeds">UsbemuSpeeds</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="UsbemuDevice.html#UsbemuDevice-struct" title="UsbemuDevice">UsbemuDevice</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="UsbemuDevice.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">├──</span> UsbemuClasses
+    <span class="lineart">╰──</span> UsbemuSpeeds
+    GObject
+    <span class="lineart">╰──</span> UsbemuDevice
+        <span class="lineart">╰──</span> <a class="link" href="UsbemuVhciDevice.html" title="UsbemuVhciDevice">UsbemuVhciDevice</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="UsbemuDevice.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;usbemu/usbemu.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="UsbemuDevice.description"></a><h2>Description</h2>
+<p><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> is the core class of USB device emulation.</p>
+</div>
+<div class="refsect1">
+<a name="UsbemuDevice.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="usbemu-device-new"></a><h3>usbemu_device_new ()</h3>
+<pre class="programlisting"><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="returnvalue">UsbemuDevice</span></a> *
+usbemu_device_new ();</pre>
+<p>Create a new <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> instance.</p>
+<div class="refsect3">
+<a name="usbemu-device-new.returns"></a><h4>Returns</h4>
+<p>The constructed device object
+or <code class="literal">NULL</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> UsbemuDevice]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-new-from-argv"></a><h3>usbemu_device_new_from_argv ()</h3>
+<pre class="programlisting"><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="returnvalue">UsbemuDevice</span></a> *
+usbemu_device_new_from_argv (<em class="parameter"><code><span class="type">gchar</span> **argv</code></em>,
+                             <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Create <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> from tokenized command line string. See
+<a class="link" href="UsbemuDevice.html#usbemu-device-new-from-string" title="usbemu_device_new_from_string ()"><code class="function">usbemu_device_new_from_string()</code></a> for valid syntax.</p>
+<p>A generic interface object is created when <code class="literal">NULL</code> or an empty strv is
+passed.</p>
+<div class="refsect3">
+<a name="usbemu-device-new-from-argv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>argv</p></td>
+<td class="parameter_description"><p>device description. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>][<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> zero-terminated=1]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-new-from-argv.returns"></a><h4>Returns</h4>
+<p>a newly created <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object or <code class="literal">NULL</code> if
+failed. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-new-from-string"></a><h3>usbemu_device_new_from_string ()</h3>
+<pre class="programlisting"><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="returnvalue">UsbemuDevice</span></a> *
+usbemu_device_new_from_string (<em class="parameter"><code>const <span class="type">gchar</span> *str</code></em>,
+                               <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Create <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> from a command line like formated string. Valid syntax
+is:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></td>
+        <td class="listing_code"><pre class="programlisting">object<span class="gtkdoc opt">-</span>type<span class="gtkdoc opt">=&lt;</span>device<span class="gtkdoc opt">-</span>type<span class="gtkdoc opt">&gt; [[&lt;</span>property<span class="gtkdoc opt">-</span>name<span class="gtkdoc opt">&gt;=&lt;</span>property<span class="gtkdoc opt">-</span>value<span class="gtkdoc opt">&gt;]...]</span> \
+  <span class="gtkdoc opt">[[--</span>configuration <span class="gtkdoc opt">[[&lt;</span>property<span class="gtkdoc opt">-</span>name<span class="gtkdoc opt">&gt;=&lt;</span>property<span class="gtkdoc opt">-</span>value<span class="gtkdoc opt">&gt;]...]</span> \
+    <span class="gtkdoc opt">[[--</span>interface \
+      <span class="gtkdoc opt">[[--</span>alternate<span class="gtkdoc opt">-</span>setting object<span class="gtkdoc opt">-</span>type<span class="gtkdoc opt">=&lt;</span>interface<span class="gtkdoc opt">-</span>type<span class="gtkdoc opt">&gt; [[&lt;</span>property<span class="gtkdoc opt">-</span>name<span class="gtkdoc opt">&gt;=&lt;</span>property<span class="gtkdoc opt">-</span>value<span class="gtkdoc opt">&gt;]...]</span> \
+        <span class="gtkdoc opt">[[--</span>endpoint <span class="gtkdoc opt">[[&lt;</span>field<span class="gtkdoc opt">-</span>name<span class="gtkdoc opt">&gt;=&lt;</span>field<span class="gtkdoc opt">-</span>value<span class="gtkdoc opt">&gt;]...]]...]</span>
+       <span class="gtkdoc opt">]...]</span>
+     <span class="gtkdoc opt">]...]</span>
+   <span class="gtkdoc opt">]..]</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>A generic device object is created when <code class="literal">NULL</code> or an empty string is passed.</p>
+<div class="refsect3">
+<a name="usbemu-device-new-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>command line like device description. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-new-from-string.returns"></a><h4>Returns</h4>
+<p>a newly created <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object or <code class="literal">NULL</code> if
+failed. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-attached"></a><h3>usbemu_device_get_attached ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+usbemu_device_get_attached (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get device attached state.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-attached.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-attached.returns"></a><h4>Returns</h4>
+<p> Device attached state.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-attach"></a><h3>usbemu_device_attach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_attach (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                      <em class="parameter"><code><span class="type">gchar</span> **options</code></em>,
+                      <em class="parameter"><code><span class="type">GCancellable</span> *cancellable</code></em>,
+                      <em class="parameter"><code><span class="type">GAsyncReadyCallback</span> callback</code></em>,
+                      <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+<p>Asynchronously attach the device with specified options. Use
+<a class="link" href="UsbemuDevice.html#usbemu-device-attach-finish" title="usbemu_device_attach_finish ()"><code class="function">usbemu_device_attach_finish()</code></a> to retrieve the result.</p>
+<div class="refsect3">
+<a name="usbemu-device-attach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>options</p></td>
+<td class="parameter_description"><p>extra information passed
+for command line as string-array. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>][<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> zero-terminated=1]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>a <span class="type">GCancellable</span> or <code class="literal">NULL</code>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>a <span class="type">GAsyncReadyCallback</span>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid until first called."><span class="acronym">scope async</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data for the callback. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="This parameter is a 'user_data', for callbacks; many bindings can pass NULL here."><span class="acronym">closure</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-attach-finish"></a><h3>usbemu_device_attach_finish ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+usbemu_device_attach_finish (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                             <em class="parameter"><code><span class="type">GAsyncResult</span> *result</code></em>,
+                             <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Gets the result of a <a class="link" href="UsbemuDevice.html#usbemu-device-attach" title="usbemu_device_attach ()"><code class="function">usbemu_device_attach()</code></a> call.</p>
+<div class="refsect3">
+<a name="usbemu-device-attach-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>the <span class="type">GAsyncResult</span>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p><span class="type">GError</span> for error reporting, or <code class="literal">NULL</code> to ignore. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-attach-finish.returns"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> if the attachment has been done successfully, <code class="literal">FALSE</code> on error.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-detach"></a><h3>usbemu_device_detach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_detach (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                      <em class="parameter"><code><span class="type">gchar</span> **options</code></em>,
+                      <em class="parameter"><code><span class="type">GCancellable</span> *cancellable</code></em>,
+                      <em class="parameter"><code><span class="type">GAsyncReadyCallback</span> callback</code></em>,
+                      <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+<p>Asynchronously detach the device with specified options. Use
+<a class="link" href="UsbemuDevice.html#usbemu-device-detach-finish" title="usbemu_device_detach_finish ()"><code class="function">usbemu_device_detach_finish()</code></a> to retrieve the result.</p>
+<div class="refsect3">
+<a name="usbemu-device-detach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>options</p></td>
+<td class="parameter_description"><p>extra information passed
+for command line as string-array. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>][<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> zero-terminated=1]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>a <span class="type">GCancellable</span> or <code class="literal">NULL</code>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>a <span class="type">GAsyncReadyCallback</span>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid until first called."><span class="acronym">scope async</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data for the callback. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="This parameter is a 'user_data', for callbacks; many bindings can pass NULL here."><span class="acronym">closure</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-detach-finish"></a><h3>usbemu_device_detach_finish ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+usbemu_device_detach_finish (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                             <em class="parameter"><code><span class="type">GAsyncResult</span> *result</code></em>,
+                             <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Gets the result of a <a class="link" href="UsbemuDevice.html#usbemu-device-detach" title="usbemu_device_detach ()"><code class="function">usbemu_device_detach()</code></a> call.</p>
+<div class="refsect3">
+<a name="usbemu-device-detach-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>the <span class="type">GAsyncResult</span>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p><span class="type">GError</span> for error reporting, or <code class="literal">NULL</code> to ignore. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-detach-finish.returns"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> if the detachment has been done successfully, <code class="literal">FALSE</code> on error.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-specification-num"></a><h3>usbemu_device_get_specification_num ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint16</span>
+usbemu_device_get_specification_num (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get device specification release number in Binary-Coded Decimal (i.e., 2.10
+is 210H). This field identifies the release of the USB Specification with
+which the device and its descriptors are compliant.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-specification-num.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-specification-num.returns"></a><h4>Returns</h4>
+<p> Device specification number.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-set-specification-num"></a><h3>usbemu_device_set_specification_num ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_set_specification_num (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                                     <em class="parameter"><code><span class="type">guint16</span> spec</code></em>);</pre>
+<p>Set device specification release number in Binary-Coded Decimal (i.e., 2.10
+is 210H).</p>
+<div class="refsect3">
+<a name="usbemu-device-set-specification-num.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spec</p></td>
+<td class="parameter_description"><p>device specification number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-class"></a><h3>usbemu_device_get_class ()</h3>
+<pre class="programlisting"><a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="returnvalue">UsbemuClasses</span></a>
+usbemu_device_get_class (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get device class code (assigned by
+<a class="ulink" href="http://www.usb.org/developers/defined_class" target="_top">USB-IF</a>).</p>
+<p>If this field is reset to <a class="link" href="UsbemuDevice.html#USBEMU-CLASS-USE-INTERFACE-DESCRIPTOR:CAPS"><span class="type">USBEMU_CLASS_USE_INTERFACE_DESCRIPTOR</span></a>, each
+interface within a configuration specifies its own class information and the
+various interfaces operate independently.</p>
+<p>If this field is set to a value between <a class="link" href="UsbemuDevice.html#USBEMU-CLASS-AUDIO:CAPS"><span class="type">USBEMU_CLASS_AUDIO</span></a> and
+<a class="link" href="UsbemuDevice.html#USBEMU-CLASS-APPLICATION-SPECIFIC:CAPS"><span class="type">USBEMU_CLASS_APPLICATION_SPECIFIC</span></a>, the device supports different class
+specifications on different interfaces and the interfaces may not operate
+independently. This value identifies the class definition used for the
+aggregate interfaces.</p>
+<p>If this field is set to <a class="link" href="UsbemuDevice.html#USBEMU-CLASS-VENDOR-SPECIFIC:CAPS"><span class="type">USBEMU_CLASS_VENDOR_SPECIFIC</span></a>, the device class is
+vendor-specific.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-class.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-class.returns"></a><h4>Returns</h4>
+<p> Device class code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-set-class"></a><h3>usbemu_device_set_class ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_set_class (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                         <em class="parameter"><code><a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="type">UsbemuClasses</span></a> klass</code></em>);</pre>
+<p>Set device class code.</p>
+<div class="refsect3">
+<a name="usbemu-device-set-class.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>device class code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-sub-class"></a><h3>usbemu_device_get_sub_class ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint8</span>
+usbemu_device_get_sub_class (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get device sub-class code (assigned by the
+<a class="ulink" href="http://www.usb.org/developers/defined_class" target="_top">USB-IF</a>).</p>
+<p>These codes are qualified by the value of the class field. If the class field
+is reset to <a class="link" href="UsbemuDevice.html#USBEMU-CLASS-USE-INTERFACE-DESCRIPTOR:CAPS"><span class="type">USBEMU_CLASS_USE_INTERFACE_DESCRIPTOR</span></a>, this field must also be
+reset to <a class="link" href="UsbemuDevice.html#USBEMU-SUB-CLASS-USE-INTERFACE-DESCRIPTOR:CAPS" title="USBEMU_SUB_CLASS_USE_INTERFACE_DESCRIPTOR"><span class="type">USBEMU_SUB_CLASS_USE_INTERFACE_DESCRIPTOR</span></a>. If the class field is
+not set to <a class="link" href="UsbemuDevice.html#USBEMU-CLASS-VENDOR-SPECIFIC:CAPS"><span class="type">USBEMU_CLASS_VENDOR_SPECIFIC</span></a>, all values are reserved for
+assignment by the USB-IF.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-sub-class.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-sub-class.returns"></a><h4>Returns</h4>
+<p> Device sub-class code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-set-sub-class"></a><h3>usbemu_device_set_sub_class ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_set_sub_class (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                             <em class="parameter"><code><span class="type">guint8</span> sub_class</code></em>);</pre>
+<p>Set device sub-class code.</p>
+<div class="refsect3">
+<a name="usbemu-device-set-sub-class.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sub_class</p></td>
+<td class="parameter_description"><p>device sub-class code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-protocol"></a><h3>usbemu_device_get_protocol ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint8</span>
+usbemu_device_get_protocol (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get device protocol code (assigned by the
+<a class="ulink" href="http://www.usb.org/developers/defined_class" target="_top">USB-IF</a>).</p>
+<p>These codes are qualified by the value of the class and the sub-class fields.
+If a device supports class-specific protocols on a device basis as opposed to
+an interface basis, this code identifies the protocols that the device uses
+as defined by the specification of the device class.</p>
+<p>If this field is reset to <a class="link" href="UsbemuDevice.html#USBEMU-PROTOCOL-USE-INTERFACE-DESCRIPTOR:CAPS" title="USBEMU_PROTOCOL_USE_INTERFACE_DESCRIPTOR"><span class="type">USBEMU_PROTOCOL_USE_INTERFACE_DESCRIPTOR</span></a>, the
+device does not use class-specific protocols on a device basis. However, it
+may use class-specific protocols on an interface basis.</p>
+<p>If this field is set to <a class="link" href="UsbemuDevice.html#USBEMU-PROTOCOL-VENDOR-SPECIFIC:CAPS" title="USBEMU_PROTOCOL_VENDOR_SPECIFIC"><span class="type">USBEMU_PROTOCOL_VENDOR_SPECIFIC</span></a>, the device uses a
+vendor-specific protocol on a device basis.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-protocol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-protocol.returns"></a><h4>Returns</h4>
+<p> Device protocol code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-set-protocol"></a><h3>usbemu_device_set_protocol ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_set_protocol (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                            <em class="parameter"><code><span class="type">guint8</span> protocol</code></em>);</pre>
+<p>Set device protocol code.</p>
+<div class="refsect3">
+<a name="usbemu-device-set-protocol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>protocol</p></td>
+<td class="parameter_description"><p>device protocol code</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-max-packet-size"></a><h3>usbemu_device_get_max_packet_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint8</span>
+usbemu_device_get_max_packet_size (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get maximum packet size for endpoint zero (only 8, 16, 32, or 64 are valid).</p>
+<div class="refsect3">
+<a name="usbemu-device-get-max-packet-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-max-packet-size.returns"></a><h4>Returns</h4>
+<p> maximum packet size for endpoint zero.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-set-max-packet-size"></a><h3>usbemu_device_set_max_packet_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_set_max_packet_size (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                                   <em class="parameter"><code><span class="type">guint8</span> max_packet_size</code></em>);</pre>
+<p>Set maximum packet size for endpoint zero.</p>
+<div class="refsect3">
+<a name="usbemu-device-set-max-packet-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_packet_size</p></td>
+<td class="parameter_description"><p>maximum packet size for endpoint zero (only 8, 16, 32, or
+64 are valid).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-vendor-id"></a><h3>usbemu_device_get_vendor_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint16</span>
+usbemu_device_get_vendor_id (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get device vendor id (assigned by the
+<a class="ulink" href="http://www.usb.org/developers/defined_class" target="_top">USB-IF</a>).</p>
+<div class="refsect3">
+<a name="usbemu-device-get-vendor-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-vendor-id.returns"></a><h4>Returns</h4>
+<p> Device vendor id.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-set-vendor-id"></a><h3>usbemu_device_set_vendor_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_set_vendor_id (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                             <em class="parameter"><code><span class="type">guint16</span> vendor_id</code></em>);</pre>
+<p>Set device vendor id.</p>
+<div class="refsect3">
+<a name="usbemu-device-set-vendor-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>vendor_id</p></td>
+<td class="parameter_description"><p>device vendor id.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-product-id"></a><h3>usbemu_device_get_product_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint16</span>
+usbemu_device_get_product_id (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get device product id (assigned by the manufacturer).</p>
+<div class="refsect3">
+<a name="usbemu-device-get-product-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-product-id.returns"></a><h4>Returns</h4>
+<p> Device product id.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-set-product-id"></a><h3>usbemu_device_set_product_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_set_product_id (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                              <em class="parameter"><code><span class="type">guint16</span> product_id</code></em>);</pre>
+<p>Set device product id.</p>
+<div class="refsect3">
+<a name="usbemu-device-set-product-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>product_id</p></td>
+<td class="parameter_description"><p>device product id.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-release-number"></a><h3>usbemu_device_get_release_number ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint16</span>
+usbemu_device_get_release_number (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get device release number in binary-coded decimal.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-release-number.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-release-number.returns"></a><h4>Returns</h4>
+<p> Device release number.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-set-release-number"></a><h3>usbemu_device_set_release_number ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_set_release_number (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                                  <em class="parameter"><code><span class="type">guint16</span> release_number</code></em>);</pre>
+<p>Set device release number.</p>
+<div class="refsect3">
+<a name="usbemu-device-set-release-number.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>release_number</p></td>
+<td class="parameter_description"><p>device release number in binary-coded decimal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-manufacturer-name"></a><h3>usbemu_device_get_manufacturer_name ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_device_get_manufacturer_name (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get device manufacturer's name.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-manufacturer-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-manufacturer-name.returns"></a><h4>Returns</h4>
+<p> (transfer none) Device manufacturer's name. The returned string is
+owned by USBEmu and should not be modified or freed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-set-manufacturer-name"></a><h3>usbemu_device_set_manufacturer_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_set_manufacturer_name (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                                     <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Set device manufacturer's name.</p>
+<div class="refsect3">
+<a name="usbemu-device-set-manufacturer-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>a <code class="literal">NULL</code>-terminated name string. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-product-name"></a><h3>usbemu_device_get_product_name ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_device_get_product_name (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get device product name.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-product-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-product-name.returns"></a><h4>Returns</h4>
+<p> (transfer none) Device product name. The returned string is
+owned by USBEmu and should not be modified or freed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-set-product-name"></a><h3>usbemu_device_set_product_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_set_product_name (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Set device product name.</p>
+<div class="refsect3">
+<a name="usbemu-device-set-product-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>a <code class="literal">NULL</code>-terminated name string. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-serial"></a><h3>usbemu_device_get_serial ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_device_get_serial (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get device serial string.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-serial.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-serial.returns"></a><h4>Returns</h4>
+<p> (transfer none) Device device serial string. The returned string is
+owned by USBEmu and should not be modified or freed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-set-serial"></a><h3>usbemu_device_set_serial ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_device_set_serial (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                          <em class="parameter"><code>const <span class="type">gchar</span> *serial</code></em>);</pre>
+<p>Set device serial string.</p>
+<div class="refsect3">
+<a name="usbemu-device-set-serial.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>serial</p></td>
+<td class="parameter_description"><p>a <code class="literal">NULL</code>-terminated device serial string. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-speed"></a><h3>usbemu_device_get_speed ()</h3>
+<pre class="programlisting"><a class="link" href="UsbemuDevice.html#UsbemuSpeeds" title="enum UsbemuSpeeds"><span class="returnvalue">UsbemuSpeeds</span></a>
+usbemu_device_get_speed (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get current device/bus speed.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-speed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-speed.returns"></a><h4>Returns</h4>
+<p> A <a class="link" href="UsbemuDevice.html#UsbemuSpeeds" title="enum UsbemuSpeeds"><span class="type">UsbemuSpeeds</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-add-configuration"></a><h3>usbemu_device_add_configuration ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+usbemu_device_add_configuration (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                                 <em class="parameter"><code><span class="type">struct _UsbemuConfiguration</span> *configuration</code></em>);</pre>
+<p>Add a configuration to device. The configuration object must not have been
+added to other device.</p>
+<div class="refsect3">
+<a name="usbemu-device-add-configuration.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>configuration</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-add-configuration.returns"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> if succeeded. <code class="literal">FALSE</code> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-configuration"></a><h3>usbemu_device_get_configuration ()</h3>
+<pre class="programlisting">struct <a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="returnvalue">_UsbemuConfiguration</span></a> *
+usbemu_device_get_configuration (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>,
+                                 <em class="parameter"><code><span class="type">guint</span> configuration_value</code></em>);</pre>
+<p>Get the <a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> of a device with specified configuration value.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-configuration.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>configuration_value</p></td>
+<td class="parameter_description"><p>the value used to identify a <a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a>
+object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-configuration.returns"></a><h4>Returns</h4>
+<p>a <a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> if available, or <code class="literal">NULL</code>
+otherwise. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-configurations"></a><h3>usbemu_device_get_configurations ()</h3>
+<pre class="programlisting"><span class="returnvalue">GSList</span> *
+usbemu_device_get_configurations (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get all available configurations of a device.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-configurations.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-configurations.returns"></a><h4>Returns</h4>
+<p>A list of
+<a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> objects added to the device. Free with:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="function">g_slist_free_full</span> <span class="gtkdoc opt">(</span>slist<span class="gtkdoc opt">, (</span>GDestroyNotify<span class="gtkdoc opt">)</span> g_object_unref<span class="gtkdoc opt">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> GSList(UsbemuConfiguration)]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-device-get-n-configurations"></a><h3>usbemu_device_get_n_configurations ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint</span>
+usbemu_device_get_n_configurations (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
+<p>Get number of available configurations in this device.</p>
+<div class="refsect3">
+<a name="usbemu-device-get-n-configurations.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-device-get-n-configurations.returns"></a><h4>Returns</h4>
+<p> number of available configurations.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="UsbemuDevice.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="USBEMU-TYPE-DEVICE:CAPS"></a><h3>USBEMU_TYPE_DEVICE</h3>
+<pre class="programlisting">#define USBEMU_TYPE_DEVICE  (usbemu_device_get_type ())
+</pre>
+<p>Convenient macro for <code class="function">usbemu_device_get_type()</code>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-DEVICE-PROP-ATTACHED:CAPS"></a><h3>USBEMU_DEVICE_PROP_ATTACHED</h3>
+<pre class="programlisting">#define USBEMU_DEVICE_PROP_ATTACHED "attached"
+</pre>
+<p>"attached" property name.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-DEVICE-SIGNAL-ATTACHED:CAPS"></a><h3>USBEMU_DEVICE_SIGNAL_ATTACHED</h3>
+<pre class="programlisting">#define USBEMU_DEVICE_SIGNAL_ATTACHED "attached"
+</pre>
+<p>"attached" signal name.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-DEVICE-SIGNAL-DETACHED:CAPS"></a><h3>USBEMU_DEVICE_SIGNAL_DETACHED</h3>
+<pre class="programlisting">#define USBEMU_DEVICE_SIGNAL_DETACHED "detached"
+</pre>
+<p>"detached" signal name.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuDeviceClass"></a><h3>struct UsbemuDeviceClass</h3>
+<pre class="programlisting">struct UsbemuDeviceClass {
+  GObjectClass parent_class;
+
+  /* signal callbacks */
+
+  void (*attached) (UsbemuDevice *device);
+  void (*detached) (UsbemuDevice *device);
+
+  /* virtual methods */
+
+  void (*attach_async) (UsbemuDevice  *device,
+                        GTask         *task,
+                        gchar        **options);
+  void (*detach_async) (UsbemuDevice  *device,
+                        GTask         *task,
+                        gchar        **options);
+};
+</pre>
+<p>Class structure for UsbemuDevice.</p>
+<div class="refsect3">
+<a name="UsbemuDeviceClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="UsbemuDeviceClass.attached"></a>attached</code></em> ()</p></td>
+<td class="struct_member_description"><p>attached signal hook.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="UsbemuDeviceClass.detached"></a>detached</code></em> ()</p></td>
+<td class="struct_member_description"><p>detached signal hook.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="UsbemuDeviceClass.attach-async"></a>attach_async</code></em> ()</p></td>
+<td class="struct_member_description"><p>virtual method for asynchronous device attach operation.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="UsbemuDeviceClass.detach-async"></a>detach_async</code></em> ()</p></td>
+<td class="struct_member_description"><p>virtual method for asynchronous device detach operation.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuClasses"></a><h3>enum UsbemuClasses</h3>
+<p>USB class code (assigned by <a class="ulink" href="http://www.usb.org/developers/defined_class" target="_top">USB-IF</a>).</p>
+<div class="refsect3">
+<a name="UsbemuClasses.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-USE-INTERFACE-DESCRIPTOR:CAPS"></a>USBEMU_CLASS_USE_INTERFACE_DESCRIPTOR</p></td>
+<td class="enum_member_description">
+<p>    Use class information in the Interface Descriptors. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass00h" target="_top">BaseClass00h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-AUDIO:CAPS"></a>USBEMU_CLASS_AUDIO</p></td>
+<td class="enum_member_description">
+<p>    Audio. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass01h" target="_top">BaseClass01h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-COMMUNICATIONS-AND-CDC-CONTROL:CAPS"></a>USBEMU_CLASS_COMMUNICATIONS_AND_CDC_CONTROL</p></td>
+<td class="enum_member_description">
+<p>    Communications and CDC Control. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass02h" target="_top">BaseClass02h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-HID:CAPS"></a>USBEMU_CLASS_HID</p></td>
+<td class="enum_member_description">
+<p>    HID (Human Interface Device). See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass03h" target="_top">BaseClass03h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-PHYSICAL:CAPS"></a>USBEMU_CLASS_PHYSICAL</p></td>
+<td class="enum_member_description">
+<p>    Physical. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass05h" target="_top">BaseClass05h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-IMAGE:CAPS"></a>USBEMU_CLASS_IMAGE</p></td>
+<td class="enum_member_description">
+<p>    Image. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass06h" target="_top">BaseClass06h</a></p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-PRINTER:CAPS"></a>USBEMU_CLASS_PRINTER</p></td>
+<td class="enum_member_description">
+<p>    Printer. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass07h" target="_top">BaseClass07h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-MASS-STORAGE:CAPS"></a>USBEMU_CLASS_MASS_STORAGE</p></td>
+<td class="enum_member_description">
+<p>    Mass Storage. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass08h" target="_top">BaseClass08h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-HUB:CAPS"></a>USBEMU_CLASS_HUB</p></td>
+<td class="enum_member_description">
+<p>    Hub. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass09h" target="_top">BaseClass09h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-CDC-DATA:CAPS"></a>USBEMU_CLASS_CDC_DATA</p></td>
+<td class="enum_member_description">
+<p>    CDC-Data. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass0Ah" target="_top">BaseClass0Ah</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-SMART-CARD:CAPS"></a>USBEMU_CLASS_SMART_CARD</p></td>
+<td class="enum_member_description">
+<p>    Smart Card. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass0Bh" target="_top">BaseClass0Bh</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-CONTENT-SECURITY:CAPS"></a>USBEMU_CLASS_CONTENT_SECURITY</p></td>
+<td class="enum_member_description">
+<p>    Content Security. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass0Dh" target="_top">BaseClass0Dh</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-VIDEO:CAPS"></a>USBEMU_CLASS_VIDEO</p></td>
+<td class="enum_member_description">
+<p>    Video. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass0Eh" target="_top">BaseClass0Eh</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-PERSONAL-HEALTHCARE:CAPS"></a>USBEMU_CLASS_PERSONAL_HEALTHCARE</p></td>
+<td class="enum_member_description">
+<p>    Personal Healthcare. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass0Fh" target="_top">BaseClass0Fh</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-AUDIO-VIDEO:CAPS"></a>USBEMU_CLASS_AUDIO_VIDEO</p></td>
+<td class="enum_member_description">
+<p>    Audio/Video Devices. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass10h" target="_top">BaseClass10h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-BILLBOARD:CAPS"></a>USBEMU_CLASS_BILLBOARD</p></td>
+<td class="enum_member_description">
+<p>    Billboard Devices Class. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass11h" target="_top">BaseClass11h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-USB-TYPE-C-BRIDGE:CAPS"></a>USBEMU_CLASS_USB_TYPE_C_BRIDGE</p></td>
+<td class="enum_member_description">
+<p>    USB Type-C Bridge Class. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClass12h" target="_top">BaseClass12h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-DIAGNOSTIC:CAPS"></a>USBEMU_CLASS_DIAGNOSTIC</p></td>
+<td class="enum_member_description">
+<p>    Diagnostic Device. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClassDCh" target="_top">BaseClassDCh</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-WIRELESS-CONTROLLER:CAPS"></a>USBEMU_CLASS_WIRELESS_CONTROLLER</p></td>
+<td class="enum_member_description">
+<p>    Wireless Controller. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClassE0h" target="_top">BaseClassE0h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-MISCELLANEOUS:CAPS"></a>USBEMU_CLASS_MISCELLANEOUS</p></td>
+<td class="enum_member_description">
+<p>    Miscellaneous. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClassEFh" target="_top">BaseClassEFh</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-APPLICATION-SPECIFIC:CAPS"></a>USBEMU_CLASS_APPLICATION_SPECIFIC</p></td>
+<td class="enum_member_description">
+<p>    Application Specific. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClassFEh" target="_top">BaseClassFEh</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-CLASS-VENDOR-SPECIFIC:CAPS"></a>USBEMU_CLASS_VENDOR_SPECIFIC</p></td>
+<td class="enum_member_description">
+<p>    Vendor Specific. See
+    <a class="ulink" href="http://www.usb.org/developers/defined_class/#BaseClassFFh" target="_top">BaseClass00h</a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-SUB-CLASS-USE-INTERFACE-DESCRIPTOR:CAPS"></a><h3>USBEMU_SUB_CLASS_USE_INTERFACE_DESCRIPTOR</h3>
+<pre class="programlisting">#define USBEMU_SUB_CLASS_USE_INTERFACE_DESCRIPTOR 0x00
+</pre>
+<p>Use sub-class information in the Interface Descriptors. This is a descriptive
+label in <a class="link" href="UsbemuDevice.html#usbemu-device-set-sub-class" title="usbemu_device_set_sub_class ()"><code class="function">usbemu_device_set_sub_class()</code></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-PROTOCOL-USE-INTERFACE-DESCRIPTOR:CAPS"></a><h3>USBEMU_PROTOCOL_USE_INTERFACE_DESCRIPTOR</h3>
+<pre class="programlisting">#define USBEMU_PROTOCOL_USE_INTERFACE_DESCRIPTOR 0x00
+</pre>
+<p>Use protocol information in the Interface Descriptors. This is a descriptive
+label in <a class="link" href="UsbemuDevice.html#usbemu-device-set-protocol" title="usbemu_device_set_protocol ()"><code class="function">usbemu_device_set_protocol()</code></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-PROTOCOL-VENDOR-SPECIFIC:CAPS"></a><h3>USBEMU_PROTOCOL_VENDOR_SPECIFIC</h3>
+<pre class="programlisting">#define USBEMU_PROTOCOL_VENDOR_SPECIFIC 0xFF
+</pre>
+<p>Vendor specific. This is a descriptive label in <a class="link" href="UsbemuDevice.html#usbemu-device-set-protocol" title="usbemu_device_set_protocol ()"><code class="function">usbemu_device_set_protocol()</code></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuSpeeds"></a><h3>enum UsbemuSpeeds</h3>
+<p>USB device/bus speed.</p>
+<div class="refsect3">
+<a name="UsbemuSpeeds.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-SPEED-UNKNOWN:CAPS"></a>USBEMU_SPEED_UNKNOWN</p></td>
+<td class="enum_member_description">
+<p>unknown or not attached yet</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-SPEED-LOW:CAPS"></a>USBEMU_SPEED_LOW</p></td>
+<td class="enum_member_description">
+<p>USB 1.1 low speed</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-SPEED-FULL:CAPS"></a>USBEMU_SPEED_FULL</p></td>
+<td class="enum_member_description">
+<p>USB 1.1 full speed</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-SPEED-HIGH:CAPS"></a>USBEMU_SPEED_HIGH</p></td>
+<td class="enum_member_description">
+<p>USB 2.0 high speed</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-SPEED-WIRELESS:CAPS"></a>USBEMU_SPEED_WIRELESS</p></td>
+<td class="enum_member_description">
+<p>USB wireless</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-SPEED-SUPER:CAPS"></a>USBEMU_SPEED_SUPER</p></td>
+<td class="enum_member_description">
+<p>USB 3.0 super speed</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-SPEED-SUPER-PLUS:CAPS"></a>USBEMU_SPEED_SUPER_PLUS</p></td>
+<td class="enum_member_description">
+<p>USB 3.1 super+ speed</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuDevice-struct"></a><h3>UsbemuDevice</h3>
+<pre class="programlisting">typedef struct _UsbemuDevice UsbemuDevice;</pre>
+<p>An object representing emulated USB device.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="UsbemuDevice.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="UsbemuDevice--attached"></a><h3>The <code class="literal">“attached”</code> property</h3>
+<pre class="programlisting">  “attached”                 <span class="type">gboolean</span></pre>
+<p>Attached.</p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="UsbemuDevice.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="UsbemuDevice-attached"></a><h3>The <code class="literal">“attached”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device,
+               <span class="type">gpointer</span>      user_data)</pre>
+<p>Signals that a device has been attached.</p>
+<div class="refsect3">
+<a name="UsbemuDevice-attached.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>the device that emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuDevice-detached"></a><h3>The <code class="literal">“detached”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device,
+               <span class="type">gpointer</span>      user_data)</pre>
+<p>Signals that a device has been detached.</p>
+<div class="refsect3">
+<a name="UsbemuDevice-detached.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>the device that emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.27</div>
+</body>
+</html>

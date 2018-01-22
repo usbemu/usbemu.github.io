@@ -1,0 +1,1376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>UsbemuInterface: libusbemu Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libusbemu Reference Manual">
+<link rel="up" href="core.html" title="Core Classes">
+<link rel="prev" href="UsbemuConfiguration.html" title="UsbemuConfiguration">
+<link rel="next" href="usbemu-usbemu-enums.html" title="usbemu-enums">
+<meta name="generator" content="GTK-Doc V1.27 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#UsbemuInterface.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#UsbemuInterface.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#UsbemuInterface.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="UsbemuConfiguration.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="usbemu-usbemu-enums.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="UsbemuInterface"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="UsbemuInterface.top_of_page"></a>UsbemuInterface</span></h2>
+<p>UsbemuInterface — GObject representing USB device interface descriptor</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="UsbemuInterface.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="returnvalue">UsbemuInterface</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-new" title="usbemu_interface_new ()">usbemu_interface_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="returnvalue">UsbemuInterface</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-new-full" title="usbemu_interface_new_full ()">usbemu_interface_new_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="returnvalue">UsbemuInterface</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-new-from-argv" title="usbemu_interface_new_from_argv ()">usbemu_interface_new_from_argv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="returnvalue">UsbemuInterface</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-new-from-string" title="usbemu_interface_new_from_string ()">usbemu_interface_new_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-get-interface-number" title="usbemu_interface_get_interface_number ()">usbemu_interface_get_interface_number</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-get-alternate-setting" title="usbemu_interface_get_alternate_setting ()">usbemu_interface_get_alternate_setting</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-get-name" title="usbemu_interface_get_name ()">usbemu_interface_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-set-name" title="usbemu_interface_set_name ()">usbemu_interface_set_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="returnvalue">UsbemuClasses</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-get-class" title="usbemu_interface_get_class ()">usbemu_interface_get_class</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-set-class" title="usbemu_interface_set_class ()">usbemu_interface_set_class</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-get-sub-class" title="usbemu_interface_get_sub_class ()">usbemu_interface_get_sub_class</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-set-sub-class" title="usbemu_interface_set_sub_class ()">usbemu_interface_set_sub_class</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-get-protocol" title="usbemu_interface_get_protocol ()">usbemu_interface_get_protocol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-set-protocol" title="usbemu_interface_set_protocol ()">usbemu_interface_set_protocol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-add-endpoint-entries" title="usbemu_interface_add_endpoint_entries ()">usbemu_interface_add_endpoint_entries</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="UsbemuInterface.html#UsbemuEndpointEntry" title="UsbemuEndpointEntry"><span class="returnvalue">UsbemuEndpointEntry</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-get-endpoint-entries" title="usbemu_interface_get_endpoint_entries ()">usbemu_interface_get_endpoint_entries</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="returnvalue">UsbemuConfiguration</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuInterface.html#usbemu-interface-get-configuration" title="usbemu_interface_get_configuration ()">usbemu_interface_get_configuration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="UsbemuInterface.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><span class="type">guint</span></td>
+<td class="property_name"><a class="link" href="UsbemuInterface.html#UsbemuInterface--alternate-setting" title="The “alternate-setting” property">alternate-setting</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="type">UsbemuClasses</span></a></td>
+<td class="property_name"><a class="link" href="UsbemuInterface.html#UsbemuInterface--class" title="The “class” property">class</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">guint</span></td>
+<td class="property_name"><a class="link" href="UsbemuInterface.html#UsbemuInterface--interface-number" title="The “interface-number” property">interface-number</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="UsbemuInterface.html#UsbemuInterface--name" title="The “name” property">name</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">guint</span></td>
+<td class="property_name"><a class="link" href="UsbemuInterface.html#UsbemuInterface--protocol" title="The “protocol” property">protocol</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">guint</span></td>
+<td class="property_name"><a class="link" href="UsbemuInterface.html#UsbemuInterface--sub-class" title="The “sub-class” property">sub-class</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="UsbemuInterface.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#USBEMU-TYPE-INTERFACE:CAPS" title="USBEMU_TYPE_INTERFACE">USBEMU_TYPE_INTERFACE</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#USBEMU-INTERFACE-PROP-INTERFACE-NUMBER:CAPS" title="USBEMU_INTERFACE_PROP_INTERFACE_NUMBER">USBEMU_INTERFACE_PROP_INTERFACE_NUMBER</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#USBEMU-INTERFACE-PROP-ALTERNATE-SETTING:CAPS" title="USBEMU_INTERFACE_PROP_ALTERNATE_SETTING">USBEMU_INTERFACE_PROP_ALTERNATE_SETTING</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#USBEMU-INTERFACE-PROP-NAME:CAPS" title="USBEMU_INTERFACE_PROP_NAME">USBEMU_INTERFACE_PROP_NAME</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#USBEMU-INTERFACE-PROP-CLASS:CAPS" title="USBEMU_INTERFACE_PROP_CLASS">USBEMU_INTERFACE_PROP_CLASS</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#USBEMU-INTERFACE-PROP-SUB-CLASS:CAPS" title="USBEMU_INTERFACE_PROP_SUB_CLASS">USBEMU_INTERFACE_PROP_SUB_CLASS</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#USBEMU-INTERFACE-PROP-PROTOCOL:CAPS" title="USBEMU_INTERFACE_PROP_PROTOCOL">USBEMU_INTERFACE_PROP_PROTOCOL</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#UsbemuInterfaceClass" title="struct UsbemuInterfaceClass">UsbemuInterfaceClass</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#UsbemuEndpoints" title="enum UsbemuEndpoints">UsbemuEndpoints</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#USBEMU-NUM-ENDPOINTS:CAPS" title="USBEMU_NUM_ENDPOINTS">USBEMU_NUM_ENDPOINTS</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#UsbemuEndpointDirections" title="enum UsbemuEndpointDirections">UsbemuEndpointDirections</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#UsbemuEndpointTransfers" title="enum UsbemuEndpointTransfers">UsbemuEndpointTransfers</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#UsbemuEndpointIsochronousSyncs" title="enum UsbemuEndpointIsochronousSyncs">UsbemuEndpointIsochronousSyncs</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-SYNC-DONT-CARE:CAPS" title="USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_DONT_CARE">USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_DONT_CARE</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#UsbemuEndpointIsochronousUsages" title="enum UsbemuEndpointIsochronousUsages">UsbemuEndpointIsochronousUsages</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-USAGE-DONT-CARE:CAPS" title="USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_DONT_CARE">USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_DONT_CARE</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#UsbemuEndpointEntry" title="UsbemuEndpointEntry">UsbemuEndpointEntry</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="UsbemuInterface.html#UsbemuInterface-struct" title="UsbemuInterface">UsbemuInterface</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="UsbemuInterface.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">├──</span> UsbemuEndpointDirections
+    <span class="lineart">├──</span> UsbemuEndpointIsochronousSyncs
+    <span class="lineart">├──</span> UsbemuEndpointIsochronousUsages
+    <span class="lineart">├──</span> UsbemuEndpointTransfers
+    <span class="lineart">╰──</span> UsbemuEndpoints
+    GObject
+    <span class="lineart">╰──</span> UsbemuInterface
+</pre>
+</div>
+<div class="refsect1">
+<a name="UsbemuInterface.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;usbemu/usbemu.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="UsbemuInterface.description"></a><h2>Description</h2>
+<p>TODO.</p>
+</div>
+<div class="refsect1">
+<a name="UsbemuInterface.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="usbemu-interface-new"></a><h3>usbemu_interface_new ()</h3>
+<pre class="programlisting"><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="returnvalue">UsbemuInterface</span></a> *
+usbemu_interface_new ();</pre>
+<p>Create a new <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> instance.</p>
+<div class="refsect3">
+<a name="usbemu-interface-new.returns"></a><h4>Returns</h4>
+<p>The constructed device
+interface object or <code class="literal">NULL</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> UsbemuInterface]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-new-full"></a><h3>usbemu_interface_new_full ()</h3>
+<pre class="programlisting"><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="returnvalue">UsbemuInterface</span></a> *
+usbemu_interface_new_full (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
+                           <em class="parameter"><code><a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="type">UsbemuClasses</span></a> klass</code></em>,
+                           <em class="parameter"><code><span class="type">guint</span> sub_class</code></em>,
+                           <em class="parameter"><code><span class="type">guint</span> protocol</code></em>);</pre>
+<p>Create a new <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> instance with details.</p>
+<div class="refsect3">
+<a name="usbemu-interface-new-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>a <code class="literal">NULL</code>-terminated name or <code class="literal">NULL</code> to remove it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>the interface class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sub_class</p></td>
+<td class="parameter_description"><p>the interface sub-class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>protocol</p></td>
+<td class="parameter_description"><p>the interface protocol.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-interface-new-full.returns"></a><h4>Returns</h4>
+<p>The constructed device
+interface object or <code class="literal">NULL</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> UsbemuInterface]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-new-from-argv"></a><h3>usbemu_interface_new_from_argv ()</h3>
+<pre class="programlisting"><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="returnvalue">UsbemuInterface</span></a> *
+usbemu_interface_new_from_argv (<em class="parameter"><code><span class="type">gchar</span> **argv</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Create <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> from tokenized command line string. See
+<a class="link" href="UsbemuDevice.html#usbemu-device-new-from-string" title="usbemu_device_new_from_string ()"><code class="function">usbemu_device_new_from_string()</code></a> for valid syntax.</p>
+<p>A generic interface object is created when <code class="literal">NULL</code> or an empty strv is
+passed.</p>
+<div class="refsect3">
+<a name="usbemu-interface-new-from-argv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>argv</p></td>
+<td class="parameter_description"><p>interface description. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>][<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> zero-terminated=1]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-interface-new-from-argv.returns"></a><h4>Returns</h4>
+<p>a newly created <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object or
+<code class="literal">NULL</code> if failed. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-new-from-string"></a><h3>usbemu_interface_new_from_string ()</h3>
+<pre class="programlisting"><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="returnvalue">UsbemuInterface</span></a> *
+usbemu_interface_new_from_string (<em class="parameter"><code>const <span class="type">gchar</span> *str</code></em>,
+                                  <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Create <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> from a command line like formated string. See
+<a class="link" href="UsbemuDevice.html#usbemu-device-new-from-string" title="usbemu_device_new_from_string ()"><code class="function">usbemu_device_new_from_string()</code></a> for valid syntax.</p>
+<p>A generic interface object is created when <code class="literal">NULL</code> or an empty string is
+passed.</p>
+<div class="refsect3">
+<a name="usbemu-interface-new-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>command line like interface description. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-interface-new-from-string.returns"></a><h4>Returns</h4>
+<p>a newly created <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object or <code class="literal">NULL</code> if
+failed. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-get-interface-number"></a><h3>usbemu_interface_get_interface_number ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint</span>
+usbemu_interface_get_interface_number (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>);</pre>
+<p>Get number of this interface.</p>
+<div class="refsect3">
+<a name="usbemu-interface-get-interface-number.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-interface-get-interface-number.returns"></a><h4>Returns</h4>
+<p> interface number or 0 if not assigned yet.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-get-alternate-setting"></a><h3>usbemu_interface_get_alternate_setting ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint</span>
+usbemu_interface_get_alternate_setting
+                               (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>);</pre>
+<p>Get interface alternate setting number.</p>
+<div class="refsect3">
+<a name="usbemu-interface-get-alternate-setting.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-interface-get-alternate-setting.returns"></a><h4>Returns</h4>
+<p> alternate setting number or 0 otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-get-name"></a><h3>usbemu_interface_get_name ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+usbemu_interface_get_name (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>);</pre>
+<p>Get interface name.</p>
+<div class="refsect3">
+<a name="usbemu-interface-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-interface-get-name.returns"></a><h4>Returns</h4>
+<p>interface name. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-set-name"></a><h3>usbemu_interface_set_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_interface_set_name (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>,
+                           <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Set interface name.</p>
+<div class="refsect3">
+<a name="usbemu-interface-set-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>a non-<code class="literal">NULL</code> string name or <code class="literal">NULL</code> to remove it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-get-class"></a><h3>usbemu_interface_get_class ()</h3>
+<pre class="programlisting"><a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="returnvalue">UsbemuClasses</span></a>
+usbemu_interface_get_class (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>);</pre>
+<p>Get interface class code.</p>
+<div class="refsect3">
+<a name="usbemu-interface-get-class.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-interface-get-class.returns"></a><h4>Returns</h4>
+<p> a <a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="type">UsbemuClasses</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-set-class"></a><h3>usbemu_interface_set_class ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_interface_set_class (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>,
+                            <em class="parameter"><code><a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="type">UsbemuClasses</span></a> klass</code></em>);</pre>
+<p>Set interface class code.</p>
+<div class="refsect3">
+<a name="usbemu-interface-set-class.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="type">UsbemuClasses</span></a> value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-get-sub-class"></a><h3>usbemu_interface_get_sub_class ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint</span>
+usbemu_interface_get_sub_class (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>);</pre>
+<p>Get interface sub-class code.</p>
+<div class="refsect3">
+<a name="usbemu-interface-get-sub-class.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-interface-get-sub-class.returns"></a><h4>Returns</h4>
+<p> interface sub-class code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-set-sub-class"></a><h3>usbemu_interface_set_sub_class ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_interface_set_sub_class (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>,
+                                <em class="parameter"><code><span class="type">guint</span> sub_class</code></em>);</pre>
+<p>Set interface sub-class code.</p>
+<div class="refsect3">
+<a name="usbemu-interface-set-sub-class.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sub_class</p></td>
+<td class="parameter_description"><p>a sub-class code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-get-protocol"></a><h3>usbemu_interface_get_protocol ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint</span>
+usbemu_interface_get_protocol (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>);</pre>
+<p>Get interface protocol code.</p>
+<div class="refsect3">
+<a name="usbemu-interface-get-protocol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-interface-get-protocol.returns"></a><h4>Returns</h4>
+<p> interface protocol code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-set-protocol"></a><h3>usbemu_interface_set_protocol ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_interface_set_protocol (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>,
+                               <em class="parameter"><code><span class="type">guint</span> protocol</code></em>);</pre>
+<p>Set interface protocol code.</p>
+<div class="refsect3">
+<a name="usbemu-interface-set-protocol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>protocol</p></td>
+<td class="parameter_description"><p>a interface protocol code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-add-endpoint-entries"></a><h3>usbemu_interface_add_endpoint_entries ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_interface_add_endpoint_entries (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>,
+                                       <em class="parameter"><code>const <a class="link" href="UsbemuInterface.html#UsbemuEndpointEntry" title="UsbemuEndpointEntry"><span class="type">UsbemuEndpointEntry</span></a> *entries</code></em>);</pre>
+<p>Add endpoints to interface.</p>
+<div class="refsect3">
+<a name="usbemu-interface-add-endpoint-entries.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entries</p></td>
+<td class="parameter_description"><p>a <code class="literal">NULL</code>-terminated array of <a class="link" href="UsbemuInterface.html#UsbemuEndpointEntry" title="UsbemuEndpointEntry"><span class="type">UsbemuEndpointEntry</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-get-endpoint-entries"></a><h3>usbemu_interface_get_endpoint_entries ()</h3>
+<pre class="programlisting">const <a class="link" href="UsbemuInterface.html#UsbemuEndpointEntry" title="UsbemuEndpointEntry"><span class="returnvalue">UsbemuEndpointEntry</span></a> *
+usbemu_interface_get_endpoint_entries (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>);</pre>
+<p>Get all <a class="link" href="UsbemuInterface.html#UsbemuEndpointEntry" title="UsbemuEndpointEntry"><span class="type">UsbemuEndpointEntry</span></a> entries added to this interface.</p>
+<div class="refsect3">
+<a name="usbemu-interface-get-endpoint-entries.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-interface-get-endpoint-entries.returns"></a><h4>Returns</h4>
+<p><code class="literal">NULL</code>-terminated array of
+<a class="link" href="UsbemuInterface.html#UsbemuEndpointEntry" title="UsbemuEndpointEntry"><span class="type">UsbemuEndpointEntry</span></a> added to this interface. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> zero-terminated=1]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-interface-get-configuration"></a><h3>usbemu_interface_get_configuration ()</h3>
+<pre class="programlisting"><a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="returnvalue">UsbemuConfiguration</span></a> *
+usbemu_interface_get_configuration (<em class="parameter"><code><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> *interface</code></em>);</pre>
+<p>Get the <a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> this interface was added to.</p>
+<div class="refsect3">
+<a name="usbemu-interface-get-configuration.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-interface-get-configuration.returns"></a><h4>Returns</h4>
+<p>a <a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> or <code class="literal">NULL</code> if not added to any
+yet. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="UsbemuInterface.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="USBEMU-TYPE-INTERFACE:CAPS"></a><h3>USBEMU_TYPE_INTERFACE</h3>
+<pre class="programlisting">#define USBEMU_TYPE_INTERFACE  (usbemu_interface_get_type ())
+</pre>
+<p>Convenient macro for <code class="function">usbemu_interface_get_type()</code>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-INTERFACE-PROP-INTERFACE-NUMBER:CAPS"></a><h3>USBEMU_INTERFACE_PROP_INTERFACE_NUMBER</h3>
+<pre class="programlisting">#define USBEMU_INTERFACE_PROP_INTERFACE_NUMBER "interface-number"
+</pre>
+<p>"interface-number" property name.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-INTERFACE-PROP-ALTERNATE-SETTING:CAPS"></a><h3>USBEMU_INTERFACE_PROP_ALTERNATE_SETTING</h3>
+<pre class="programlisting">#define USBEMU_INTERFACE_PROP_ALTERNATE_SETTING "alternate-setting"
+</pre>
+<p>"alternate-setting" property name.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-INTERFACE-PROP-NAME:CAPS"></a><h3>USBEMU_INTERFACE_PROP_NAME</h3>
+<pre class="programlisting">#define USBEMU_INTERFACE_PROP_NAME "name"
+</pre>
+<p>"name" property name.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-INTERFACE-PROP-CLASS:CAPS"></a><h3>USBEMU_INTERFACE_PROP_CLASS</h3>
+<pre class="programlisting">#define USBEMU_INTERFACE_PROP_CLASS "class"
+</pre>
+<p>"class" property name.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-INTERFACE-PROP-SUB-CLASS:CAPS"></a><h3>USBEMU_INTERFACE_PROP_SUB_CLASS</h3>
+<pre class="programlisting">#define USBEMU_INTERFACE_PROP_SUB_CLASS "sub-class"
+</pre>
+<p>"sub-class" property name.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-INTERFACE-PROP-PROTOCOL:CAPS"></a><h3>USBEMU_INTERFACE_PROP_PROTOCOL</h3>
+<pre class="programlisting">#define USBEMU_INTERFACE_PROP_PROTOCOL "protocol"
+</pre>
+<p>"protocol" property name.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuInterfaceClass"></a><h3>struct UsbemuInterfaceClass</h3>
+<pre class="programlisting">struct UsbemuInterfaceClass {
+  GObjectClass parent_class;
+};
+</pre>
+<p>Class structure for UsbemuInterface.</p>
+<div class="refsect3">
+<a name="UsbemuInterfaceClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuEndpoints"></a><h3>enum UsbemuEndpoints</h3>
+<p>Predefined endpoint numbers.</p>
+<div class="refsect3">
+<a name="UsbemuEndpoints.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-CTL:CAPS"></a>USBEMU_EP_CTL</p></td>
+<td class="enum_member_description">
+<p>Control endpoint.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-1:CAPS"></a>USBEMU_EP_1</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.1.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-2:CAPS"></a>USBEMU_EP_2</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.2.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-3:CAPS"></a>USBEMU_EP_3</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.3.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-4:CAPS"></a>USBEMU_EP_4</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.4.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-5:CAPS"></a>USBEMU_EP_5</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.5.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-6:CAPS"></a>USBEMU_EP_6</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.6.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-7:CAPS"></a>USBEMU_EP_7</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.7.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-8:CAPS"></a>USBEMU_EP_8</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.8.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-9:CAPS"></a>USBEMU_EP_9</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.9.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-10:CAPS"></a>USBEMU_EP_10</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.10.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-11:CAPS"></a>USBEMU_EP_11</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.11.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-12:CAPS"></a>USBEMU_EP_12</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.12.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-13:CAPS"></a>USBEMU_EP_13</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.13.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-14:CAPS"></a>USBEMU_EP_14</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.14.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-EP-15:CAPS"></a>USBEMU_EP_15</p></td>
+<td class="enum_member_description">
+<p>Endpoint no.15.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-NUM-ENDPOINTS:CAPS"></a><h3>USBEMU_NUM_ENDPOINTS</h3>
+<pre class="programlisting">#define USBEMU_NUM_ENDPOINTS (USBEMU_EP_15 + 1)
+</pre>
+<p>Number of maximum valid endpoints inclusive of control endpoint.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuEndpointDirections"></a><h3>enum UsbemuEndpointDirections</h3>
+<p>Data flow direction.</p>
+<div class="refsect3">
+<a name="UsbemuEndpointDirections.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-DIRECTION-OUT:CAPS"></a>USBEMU_ENDPOINT_DIRECTION_OUT</p></td>
+<td class="enum_member_description">
+<p>host to device.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-DIRECTION-IN:CAPS"></a>USBEMU_ENDPOINT_DIRECTION_IN</p></td>
+<td class="enum_member_description">
+<p>device to host.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuEndpointTransfers"></a><h3>enum UsbemuEndpointTransfers</h3>
+<p>Endpoint transfer type.</p>
+<div class="refsect3">
+<a name="UsbemuEndpointTransfers.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-TRANSFER-CONTROL:CAPS"></a>USBEMU_ENDPOINT_TRANSFER_CONTROL</p></td>
+<td class="enum_member_description">
+<p>Control transfer type. One should not try
+    to create endpoints of this type, because it's always built-in.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-TRANSFER-ISOCHRONOUS:CAPS"></a>USBEMU_ENDPOINT_TRANSFER_ISOCHRONOUS</p></td>
+<td class="enum_member_description">
+<p>Isochronous transfer type.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-TRANSFER-BULK:CAPS"></a>USBEMU_ENDPOINT_TRANSFER_BULK</p></td>
+<td class="enum_member_description">
+<p>Bulk transfer type.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-TRANSFER-INTERRUPT:CAPS"></a>USBEMU_ENDPOINT_TRANSFER_INTERRUPT</p></td>
+<td class="enum_member_description">
+<p>Interrupt transfer type.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuEndpointIsochronousSyncs"></a><h3>enum UsbemuEndpointIsochronousSyncs</h3>
+<p>Synchronization type for isochronous endpoints. For other types of endpoints,
+use <a class="link" href="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-SYNC-DONT-CARE:CAPS" title="USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_DONT_CARE"><span class="type">USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_DONT_CARE</span></a>.</p>
+<div class="refsect3">
+<a name="UsbemuEndpointIsochronousSyncs.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-ISOCHRONOUS-SYNC-NONE:CAPS"></a>USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_NONE</p></td>
+<td class="enum_member_description">
+<p>No synchronization.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-ISOCHRONOUS-SYNC-ASYNC:CAPS"></a>USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_ASYNC</p></td>
+<td class="enum_member_description">
+<p>Asynchronous.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-ISOCHRONOUS-SYNC-ADAPTIVE:CAPS"></a>USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_ADAPTIVE</p></td>
+<td class="enum_member_description">
+<p>Adaptive.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-ISOCHRONOUS-SYNC-SYNC:CAPS"></a>USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_SYNC</p></td>
+<td class="enum_member_description">
+<p>Synchronous.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-ENDPOINT-ISOCHRONOUS-SYNC-DONT-CARE:CAPS"></a><h3>USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_DONT_CARE</h3>
+<pre class="programlisting">#define             USBEMU_ENDPOINT_ISOCHRONOUS_SYNC_DONT_CARE</pre>
+<p>Macro used to pack <a class="link" href="UsbemuInterface.html#UsbemuEndpointEntry.attributes"><span class="type">UsbemuEndpointEntry.attributes</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuEndpointIsochronousUsages"></a><h3>enum UsbemuEndpointIsochronousUsages</h3>
+<p>Usage type for isochronous endpoints. For other types of endpoints, use
+<a class="link" href="UsbemuInterface.html#USBEMU-ENDPOINT-ISOCHRONOUS-USAGE-DONT-CARE:CAPS" title="USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_DONT_CARE"><span class="type">USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_DONT_CARE</span></a>.</p>
+<div class="refsect3">
+<a name="UsbemuEndpointIsochronousUsages.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-ISOCHRONOUS-USAGE-DATA:CAPS"></a>USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_DATA</p></td>
+<td class="enum_member_description">
+<p>data endpoint.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-ISOCHRONOUS-USAGE-FEEDBACK:CAPS"></a>USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_FEEDBACK</p></td>
+<td class="enum_member_description">
+<p>explicit feedback endpoint.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-ISOCHRONOUS-USAGE-IMPLICIT-FEEDBACK-DATA:CAPS"></a>USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_IMPLICIT_FEEDBACK_DATA</p></td>
+<td class="enum_member_description">
+<p>implicit feedback
+    endpoint.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="USBEMU-ENDPOINT-ISOCHRONOUS-USAGE-RESERVED:CAPS"></a>USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_RESERVED</p></td>
+<td class="enum_member_description">
+<p>reserved.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-ENDPOINT-ISOCHRONOUS-USAGE-DONT-CARE:CAPS"></a><h3>USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_DONT_CARE</h3>
+<pre class="programlisting">#define             USBEMU_ENDPOINT_ISOCHRONOUS_USAGE_DONT_CARE</pre>
+<p>Macro used to pack <a class="link" href="UsbemuInterface.html#UsbemuEndpointEntry.attributes"><span class="type">UsbemuEndpointEntry.attributes</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuEndpointEntry"></a><h3>UsbemuEndpointEntry</h3>
+<pre class="programlisting">typedef struct {
+  UsbemuEndpoints endpoint_number;
+  UsbemuEndpointDirections direction;
+  UsbemuEndpointTransfers transfer;
+  guint8 attributes;
+  guint max_packet_size;
+  guint additional_transactions;
+  guint interval;
+} UsbemuEndpointEntry;
+</pre>
+<p>Per endpoint definition entry for <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a>. See
+<a class="link" href="UsbemuInterface.html#usbemu-interface-add-endpoint-entries" title="usbemu_interface_add_endpoint_entries ()"><code class="function">usbemu_interface_add_endpoint_entries()</code></a>.</p>
+<div class="refsect3">
+<a name="UsbemuEndpointEntry.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="UsbemuInterface.html#UsbemuEndpoints" title="enum UsbemuEndpoints"><span class="type">UsbemuEndpoints</span></a> <em class="structfield"><code><a name="UsbemuEndpointEntry.endpoint-number"></a>endpoint_number</code></em>;</p></td>
+<td class="struct_member_description"><p>a <a class="link" href="UsbemuInterface.html#UsbemuEndpoints" title="enum UsbemuEndpoints"><span class="type">UsbemuEndpoints</span></a>. Control endpoints are automatically
+included, so should never be used here.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="UsbemuInterface.html#UsbemuEndpointDirections" title="enum UsbemuEndpointDirections"><span class="type">UsbemuEndpointDirections</span></a> <em class="structfield"><code><a name="UsbemuEndpointEntry.direction"></a>direction</code></em>;</p></td>
+<td class="struct_member_description"><p>a <a class="link" href="UsbemuInterface.html#UsbemuEndpointDirections" title="enum UsbemuEndpointDirections"><span class="type">UsbemuEndpointDirections</span></a>. Ignored for control endpoints.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="UsbemuInterface.html#UsbemuEndpointTransfers" title="enum UsbemuEndpointTransfers"><span class="type">UsbemuEndpointTransfers</span></a> <em class="structfield"><code><a name="UsbemuEndpointEntry.transfer"></a>transfer</code></em>;</p></td>
+<td class="struct_member_description"><p>a <a class="link" href="UsbemuInterface.html#UsbemuEndpointTransfers" title="enum UsbemuEndpointTransfers"><span class="type">UsbemuEndpointTransfers</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">guint8</span> <em class="structfield"><code><a name="UsbemuEndpointEntry.attributes"></a>attributes</code></em>;</p></td>
+<td class="struct_member_description"><p>Bit-wise OR-ed combination of <a class="link" href="UsbemuInterface.html#UsbemuEndpointIsochronousSyncs" title="enum UsbemuEndpointIsochronousSyncs"><span class="type">UsbemuEndpointIsochronousSyncs</span></a>
+and <a class="link" href="UsbemuInterface.html#UsbemuEndpointIsochronousUsages" title="enum UsbemuEndpointIsochronousUsages"><span class="type">UsbemuEndpointIsochronousUsages</span></a> for isochronous endpoints. Must be
+zero otherwise.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">guint</span> <em class="structfield"><code><a name="UsbemuEndpointEntry.max-packet-size"></a>max_packet_size</code></em>;</p></td>
+<td class="struct_member_description"><p>maximum packet size in bytes.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">guint</span> <em class="structfield"><code><a name="UsbemuEndpointEntry.additional-transactions"></a>additional_transactions</code></em>;</p></td>
+<td class="struct_member_description"><p>for high-speed isochronous and interrupt endpoints,
+this specifies the number of additional transaction opportunities per
+microframe. Valid values are 0, 1 and 2.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">guint</span> <em class="structfield"><code><a name="UsbemuEndpointEntry.interval"></a>interval</code></em>;</p></td>
+<td class="struct_member_description"><p>Interval for polling endpoint for data transfers in µs.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuInterface-struct"></a><h3>UsbemuInterface</h3>
+<pre class="programlisting">typedef struct _UsbemuInterface UsbemuInterface;</pre>
+<p>GObject representing USB device interface descriptor.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="UsbemuInterface.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="UsbemuInterface--alternate-setting"></a><h3>The <code class="literal">“alternate-setting”</code> property</h3>
+<pre class="programlisting">  “alternate-setting”        <span class="type">guint</span></pre>
+<p>The value used to select this alternate setting from the interfaces
+identified with the same interface number. It's automatically assigned
+when added to a configuration.</p>
+<p>Flags: Read</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuInterface--class"></a><h3>The <code class="literal">“class”</code> property</h3>
+<pre class="programlisting">  “class”                    <a class="link" href="UsbemuDevice.html#UsbemuClasses" title="enum UsbemuClasses"><span class="type">UsbemuClasses</span></a></pre>
+<p>Class code (assigned by the
+<a class="ulink" href="http://www.usb.org/developers/defined_class" target="_top">USB-IF</a>).</p>
+<p>A value of zero is reserved for future standardization. If this field is
+set to <a class="link" href="UsbemuDevice.html#USBEMU-CLASS-VENDOR-SPECIFIC:CAPS"><span class="type">USBEMU_CLASS_VENDOR_SPECIFIC</span></a>, the interface class is
+vendor-specific. All other values are reserved for assignment by the
+USB-IF.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: USBEMU_CLASS_VENDOR_SPECIFIC</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuInterface--interface-number"></a><h3>The <code class="literal">“interface-number”</code> property</h3>
+<pre class="programlisting">  “interface-number”         <span class="type">guint</span></pre>
+<p>Zero-based value identifying the index in the array of concurrent
+interfaces supported by this configuration. It's automatically assigned
+when added to a configuration.</p>
+<p>Flags: Read</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuInterface--name"></a><h3>The <code class="literal">“name”</code> property</h3>
+<pre class="programlisting">  “name”                     <span class="type">gchar</span> *</pre>
+<p>Name.</p>
+<p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuInterface--protocol"></a><h3>The <code class="literal">“protocol”</code> property</h3>
+<pre class="programlisting">  “protocol”                 <span class="type">guint</span></pre>
+<p>Protocol code (assigned by the
+<a class="ulink" href="http://www.usb.org/developers/defined_class" target="_top">USB-IF</a>).</p>
+<p>These codes are qualified by the value of the <a class="link" href="UsbemuInterface.html#UsbemuInterface--class" title="The “class” property"><span class="type">“class”</span></a> and
+the <a class="link" href="UsbemuInterface.html#UsbemuInterface--sub-class" title="The “sub-class” property"><span class="type">“sub-class”</span></a> fields. If an interface supports
+class-specific requests, this code identifies the protocols that the device
+uses as defined by the specification of the device class.</p>
+<p>If this field is reset to zero, the device does not use a class-specific
+protocol on this interface.</p>
+<p>If this field is set to <a class="link" href="UsbemuDevice.html#USBEMU-PROTOCOL-VENDOR-SPECIFIC:CAPS" title="USBEMU_PROTOCOL_VENDOR_SPECIFIC"><span class="type">USBEMU_PROTOCOL_VENDOR_SPECIFIC</span></a>, the device uses
+a vendor-specific protocol for this interface.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: 255</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuInterface--sub-class"></a><h3>The <code class="literal">“sub-class”</code> property</h3>
+<pre class="programlisting">  “sub-class”                <span class="type">guint</span></pre>
+<p>Subclass code (assigned by the
+<a class="ulink" href="http://www.usb.org/developers/defined_class" target="_top">USB-IF</a>).</p>
+<p>These codes are qualified by the value of the <a class="link" href="UsbemuInterface.html#UsbemuInterface--class" title="The “class” property"><span class="type">“class”</span></a> field.
+If the bInterfaceClass field is reset to
+<a class="link" href="UsbemuDevice.html#USBEMU-CLASS-USE-INTERFACE-DESCRIPTOR:CAPS"><span class="type">USBEMU_CLASS_USE_INTERFACE_DESCRIPTOR</span></a>, this field must also be reset to
+<a class="link" href="UsbemuDevice.html#USBEMU-SUB-CLASS-USE-INTERFACE-DESCRIPTOR:CAPS" title="USBEMU_SUB_CLASS_USE_INTERFACE_DESCRIPTOR"><span class="type">USBEMU_SUB_CLASS_USE_INTERFACE_DESCRIPTOR</span></a>. If the <a class="link" href="UsbemuInterface.html#UsbemuInterface--class" title="The “class” property"><span class="type">“class”</span></a>
+field is not set to <a class="link" href="UsbemuDevice.html#USBEMU-CLASS-VENDOR-SPECIFIC:CAPS"><span class="type">USBEMU_CLASS_VENDOR_SPECIFIC</span></a>, all values are reserved
+for assignment by the USB-IF.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.27</div>
+</body>
+</html>

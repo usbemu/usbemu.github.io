@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>UsbemuVhciDevice: libusbemu Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libusbemu Reference Manual">
+<link rel="up" href="devices.html" title="Device Classes">
+<link rel="prev" href="devices.html" title="Device Classes">
+<link rel="next" href="pt03.html" title="Part III. Appendices">
+<meta name="generator" content="GTK-Doc V1.27 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#UsbemuVhciDevice.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#UsbemuVhciDevice.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#UsbemuVhciDevice.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="devices.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="devices.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="pt03.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="UsbemuVhciDevice"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="UsbemuVhciDevice.top_of_page"></a>UsbemuVhciDevice</span></h2>
+<p>UsbemuVhciDevice — USB VHCI device emulation class</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="UsbemuVhciDevice.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="UsbemuVhciDevice.html" title="UsbemuVhciDevice"><span class="returnvalue">UsbemuVhciDevice</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuVhciDevice.html#usbemu-vhci-device-new" title="usbemu_vhci_device_new ()">usbemu_vhci_device_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuVhciDevice.html#usbemu-vhci-device-get-devid" title="usbemu_vhci_device_get_devid ()">usbemu_vhci_device_get_devid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuVhciDevice.html#usbemu-vhci-device-set-devid" title="usbemu_vhci_device_set_devid ()">usbemu_vhci_device_set_devid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuVhciDevice.html#usbemu-vhci-device-get-port" title="usbemu_vhci_device_get_port ()">usbemu_vhci_device_get_port</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuVhciDevice.html#usbemu-vhci-device-detach-port" title="usbemu_vhci_device_detach_port ()">usbemu_vhci_device_detach_port</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="UsbemuVhciDevice.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><span class="type">guint</span></td>
+<td class="property_name"><a class="link" href="UsbemuVhciDevice.html#UsbemuVhciDevice--devid" title="The “devid” property">devid</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">guint</span></td>
+<td class="property_name"><a class="link" href="UsbemuVhciDevice.html#UsbemuVhciDevice--port" title="The “port” property">port</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="UsbemuVhciDevice.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuVhciDevice.html#USBEMU-TYPE-VHCI-DEVICE:CAPS" title="USBEMU_TYPE_VHCI_DEVICE">USBEMU_TYPE_VHCI_DEVICE</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuVhciDevice.html#USBEMU-VHCI-DEVICE-PROP-DEVID:CAPS" title="USBEMU_VHCI_DEVICE_PROP_DEVID">USBEMU_VHCI_DEVICE_PROP_DEVID</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuVhciDevice.html#USBEMU-VHCI-DEVICE-PROP-PORT:CAPS" title="USBEMU_VHCI_DEVICE_PROP_PORT">USBEMU_VHCI_DEVICE_PROP_PORT</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="UsbemuVhciDevice.html#USBEMU-VHCI-DEVICE-PORT-UNSPECIFIED:CAPS" title="USBEMU_VHCI_DEVICE_PORT_UNSPECIFIED">USBEMU_VHCI_DEVICE_PORT_UNSPECIFIED</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="UsbemuVhciDevice.html#UsbemuVhciDeviceClass" title="struct UsbemuVhciDeviceClass">UsbemuVhciDeviceClass</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="UsbemuVhciDevice.html#UsbemuVhciDevice-struct" title="UsbemuVhciDevice">UsbemuVhciDevice</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="UsbemuVhciDevice.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> <a class="link" href="UsbemuDevice.html" title="UsbemuDevice">UsbemuDevice</a>
+        <span class="lineart">╰──</span> UsbemuVhciDevice
+</pre>
+</div>
+<div class="refsect1">
+<a name="UsbemuVhciDevice.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;usbemu/usbemu.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="UsbemuVhciDevice.description"></a><h2>Description</h2>
+<p><a class="link" href="UsbemuVhciDevice.html" title="UsbemuVhciDevice"><span class="type">UsbemuVhciDevice</span></a> provides USB emulation for local system.</p>
+</div>
+<div class="refsect1">
+<a name="UsbemuVhciDevice.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="usbemu-vhci-device-new"></a><h3>usbemu_vhci_device_new ()</h3>
+<pre class="programlisting"><a class="link" href="UsbemuVhciDevice.html" title="UsbemuVhciDevice"><span class="returnvalue">UsbemuVhciDevice</span></a> *
+usbemu_vhci_device_new ();</pre>
+<p>Create a new <a class="link" href="UsbemuVhciDevice.html" title="UsbemuVhciDevice"><span class="type">UsbemuVhciDevice</span></a> instance.</p>
+<div class="refsect3">
+<a name="usbemu-vhci-device-new.returns"></a><h4>Returns</h4>
+<p>The constructed device
+object or <code class="literal">NULL</code> if failed. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> UsbemuVhciDevice]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-vhci-device-get-devid"></a><h3>usbemu_vhci_device_get_devid ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint32</span>
+usbemu_vhci_device_get_devid (<em class="parameter"><code><a class="link" href="UsbemuVhciDevice.html" title="UsbemuVhciDevice"><span class="type">UsbemuVhciDevice</span></a> *vhci_device</code></em>);</pre>
+<p>Get VHCI device id.</p>
+<div class="refsect3">
+<a name="usbemu-vhci-device-get-devid.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>vhci_device</p></td>
+<td class="parameter_description"><p>A <a class="link" href="UsbemuVhciDevice.html" title="UsbemuVhciDevice"><span class="type">UsbemuVhciDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-vhci-device-get-devid.returns"></a><h4>Returns</h4>
+<p> VHCI Device devid.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-vhci-device-set-devid"></a><h3>usbemu_vhci_device_set_devid ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+usbemu_vhci_device_set_devid (<em class="parameter"><code><a class="link" href="UsbemuVhciDevice.html" title="UsbemuVhciDevice"><span class="type">UsbemuVhciDevice</span></a> *vhci_device</code></em>,
+                              <em class="parameter"><code><span class="type">guint32</span> devid</code></em>);</pre>
+<p>Set VHCI device id. devid is unique device identifier in a remote host in
+usbip protocol. In USBEmu it's irrelevant because we have no physical device
+to identify at all.</p>
+<div class="refsect3">
+<a name="usbemu-vhci-device-set-devid.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>vhci_device</p></td>
+<td class="parameter_description"><p>A <a class="link" href="UsbemuVhciDevice.html" title="UsbemuVhciDevice"><span class="type">UsbemuVhciDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>devid</p></td>
+<td class="parameter_description"><p>unique device identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-vhci-device-get-port"></a><h3>usbemu_vhci_device_get_port ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint</span>
+usbemu_vhci_device_get_port (<em class="parameter"><code><a class="link" href="UsbemuVhciDevice.html" title="UsbemuVhciDevice"><span class="type">UsbemuVhciDevice</span></a> *vhci_device</code></em>);</pre>
+<p>Get VHCI Device port.</p>
+<div class="refsect3">
+<a name="usbemu-vhci-device-get-port.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>vhci_device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="UsbemuVhciDevice.html" title="UsbemuVhciDevice"><span class="type">UsbemuVhciDevice</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-vhci-device-get-port.returns"></a><h4>Returns</h4>
+<p> VHCI Device port.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-vhci-device-detach-port"></a><h3>usbemu_vhci_device_detach_port ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+usbemu_vhci_device_detach_port (<em class="parameter"><code><span class="type">guint</span> port</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Detach a currently unmanaged, connected VHCI port.</p>
+<div class="refsect3">
+<a name="usbemu-vhci-device-detach-port.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>port</p></td>
+<td class="parameter_description"><p>an attached VHCI port to deattach.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p><span class="type">GError</span> for error reporting, or <code class="literal">NULL</code> to ignore. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-vhci-device-detach-port.returns"></a><h4>Returns</h4>
+<p> the deattach result. <span class="type">FALSE</span> on error.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="UsbemuVhciDevice.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="USBEMU-TYPE-VHCI-DEVICE:CAPS"></a><h3>USBEMU_TYPE_VHCI_DEVICE</h3>
+<pre class="programlisting">#define USBEMU_TYPE_VHCI_DEVICE  (usbemu_vhci_device_get_type ())
+</pre>
+<p>Convenient macro for <code class="function">usbemu_vhci_device_get_type()</code>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-VHCI-DEVICE-PROP-DEVID:CAPS"></a><h3>USBEMU_VHCI_DEVICE_PROP_DEVID</h3>
+<pre class="programlisting">#define USBEMU_VHCI_DEVICE_PROP_DEVID "devid"
+</pre>
+<p>"devid" property name.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-VHCI-DEVICE-PROP-PORT:CAPS"></a><h3>USBEMU_VHCI_DEVICE_PROP_PORT</h3>
+<pre class="programlisting">#define USBEMU_VHCI_DEVICE_PROP_PORT "port"
+</pre>
+<p>"port" property name.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="USBEMU-VHCI-DEVICE-PORT-UNSPECIFIED:CAPS"></a><h3>USBEMU_VHCI_DEVICE_PORT_UNSPECIFIED</h3>
+<pre class="programlisting">#define USBEMU_VHCI_DEVICE_PORT_UNSPECIFIED  G_MAXUINT
+</pre>
+<p>Initial value for <a class="link" href="UsbemuVhciDevice.html#UsbemuVhciDevice--port" title="The “port” property"><span class="type">“port”</span></a> of an unattached device.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuVhciDeviceClass"></a><h3>struct UsbemuVhciDeviceClass</h3>
+<pre class="programlisting">struct UsbemuVhciDeviceClass {
+  UsbemuDeviceClass parent_class;
+};
+</pre>
+<p>Class structure for UsbemuVhciDevice.</p>
+<div class="refsect3">
+<a name="UsbemuVhciDeviceClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuVhciDevice-struct"></a><h3>UsbemuVhciDevice</h3>
+<pre class="programlisting">typedef struct _UsbemuVhciDevice UsbemuVhciDevice;</pre>
+<p>An object representing emulated USB device for Linux USB VHCI.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="UsbemuVhciDevice.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="UsbemuVhciDevice--devid"></a><h3>The <code class="literal">“devid”</code> property</h3>
+<pre class="programlisting">  “devid”                    <span class="type">guint</span></pre>
+<p>Device ID.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="UsbemuVhciDevice--port"></a><h3>The <code class="literal">“port”</code> property</h3>
+<pre class="programlisting">  “port”                     <span class="type">guint</span></pre>
+<p>Port number this VHCI device is attached to.</p>
+<p>Flags: Read</p>
+<p>Default value: 4294967295</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.27</div>
+</body>
+</html>
