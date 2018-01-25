@@ -85,7 +85,9 @@
     <keyword type="function" name="usbemu_configuration_get_max_power ()" link="UsbemuConfiguration.html#usbemu-configuration-get-max-power"/>
     <keyword type="function" name="usbemu_configuration_set_max_power ()" link="UsbemuConfiguration.html#usbemu-configuration-set-max-power"/>
     <keyword type="function" name="usbemu_configuration_get_device ()" link="UsbemuConfiguration.html#usbemu-configuration-get-device"/>
-    <keyword type="function" name="usbemu_configuration_add_alternate_interfaces ()" link="UsbemuConfiguration.html#usbemu-configuration-add-alternate-interfaces"/>
+    <keyword type="function" name="usbemu_configuration_get_n_interface_groups ()" link="UsbemuConfiguration.html#usbemu-configuration-get-n-interface-groups"/>
+    <keyword type="function" name="usbemu_configuration_add_alternate_interface ()" link="UsbemuConfiguration.html#usbemu-configuration-add-alternate-interface"/>
+    <keyword type="function" name="usbemu_configuration_get_alternate_interface ()" link="UsbemuConfiguration.html#usbemu-configuration-get-alternate-interface"/>
     <keyword type="function" name="usbemu_configuration_get_alternate_interfaces ()" link="UsbemuConfiguration.html#usbemu-configuration-get-alternate-interfaces"/>
     <keyword type="function" name="usbemu_configuration_get_n_alternate_interfaces ()" link="UsbemuConfiguration.html#usbemu-configuration-get-n-alternate-interfaces"/>
     <keyword type="macro" name="USBEMU_TYPE_CONFIGURATION" link="UsbemuConfiguration.html#USBEMU-TYPE-CONFIGURATION:CAPS"/>

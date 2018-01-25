@@ -138,15 +138,30 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gint</span>
+<span class="returnvalue">guint</span>
 </td>
 <td class="function_name">
-<a class="link" href="UsbemuConfiguration.html#usbemu-configuration-add-alternate-interfaces" title="usbemu_configuration_add_alternate_interfaces ()">usbemu_configuration_add_alternate_interfaces</a> <span class="c_punctuation">()</span>
+<a class="link" href="UsbemuConfiguration.html#usbemu-configuration-get-n-interface-groups" title="usbemu_configuration_get_n_interface_groups ()">usbemu_configuration_get_n_interface_groups</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">GSList</span> *
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuConfiguration.html#usbemu-configuration-add-alternate-interface" title="usbemu_configuration_add_alternate_interface ()">usbemu_configuration_add_alternate_interface</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">struct <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="returnvalue">_UsbemuInterface</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="UsbemuConfiguration.html#usbemu-configuration-get-alternate-interface" title="usbemu_configuration_get_alternate_interface ()">usbemu_configuration_get_alternate_interface</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GPtrArray</span> *
 </td>
 <td class="function_name">
 <a class="link" href="UsbemuConfiguration.html#usbemu-configuration-get-alternate-interfaces" title="usbemu_configuration_get_alternate_interfaces ()">usbemu_configuration_get_alternate_interfaces</a> <span class="c_punctuation">()</span>
@@ -603,16 +618,47 @@ usbemu_configuration_get_device (<em class="parameter"><code><a class="link" hre
 </div>
 <hr>
 <div class="refsect2">
-<a name="usbemu-configuration-add-alternate-interfaces"></a><h3>usbemu_configuration_add_alternate_interfaces ()</h3>
-<pre class="programlisting"><span class="returnvalue">gint</span>
-usbemu_configuration_add_alternate_interfaces
-                               (<em class="parameter"><code><a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> *configuration</code></em>,
-                                <em class="parameter"><code><span class="type">struct _UsbemuInterface</span> **interfaces</code></em>);</pre>
-<p>Add an multiple interfaces to configuration. These interfaces, if valid, will
-be assigned with a new, identical interface number, and each of them an
-increamental alternate setting number.</p>
+<a name="usbemu-configuration-get-n-interface-groups"></a><h3>usbemu_configuration_get_n_interface_groups ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint</span>
+usbemu_configuration_get_n_interface_groups
+                               (<em class="parameter"><code><a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> *configuration</code></em>);</pre>
+<p>Get number of interface alternate setting groups available.</p>
 <div class="refsect3">
-<a name="usbemu-configuration-add-alternate-interfaces.parameters"></a><h4>Parameters</h4>
+<a name="usbemu-configuration-get-n-interface-groups.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>configuration</p></td>
+<td class="parameter_description"><p>the <a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-configuration-get-n-interface-groups.returns"></a><h4>Returns</h4>
+<p> number of interface alternate setting groups.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-configuration-add-alternate-interface"></a><h3>usbemu_configuration_add_alternate_interface ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+usbemu_configuration_add_alternate_interface
+                               (<em class="parameter"><code><a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> *configuration</code></em>,
+                                <em class="parameter"><code><span class="type">guint</span> interface_number</code></em>,
+                                <em class="parameter"><code><span class="type">struct _UsbemuInterface</span> *interface</code></em>);</pre>
+<p>Add an interface as the last alternate setting of an interface group
+specified by <em class="parameter"><code>interface_number</code></em>
+. If <em class="parameter"><code>interface_number</code></em>
+ equals to next valid
+interface number, a new group is created; or, if larger than that, it's
+considered an error.</p>
+<div class="refsect3">
+<a name="usbemu-configuration-add-alternate-interface.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -626,27 +672,75 @@ increamental alternate setting number.</p>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
-<td class="parameter_name"><p>interfaces</p></td>
-<td class="parameter_description"><p>a
-<code class="literal">NULL</code>-terminated array of <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> objects. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> zero-terminated=1][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+<td class="parameter_name"><p>interface_number</p></td>
+<td class="parameter_description"><p>an interface number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interface</p></td>
+<td class="parameter_description"><p>the <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="usbemu-configuration-add-alternate-interfaces.returns"></a><h4>Returns</h4>
-<p> interface number of added interfaces if succeeded. -1 otherwise.</p>
+<a name="usbemu-configuration-add-alternate-interface.returns"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> if added, <code class="literal">FALSE</code> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="usbemu-configuration-get-alternate-interface"></a><h3>usbemu_configuration_get_alternate_interface ()</h3>
+<pre class="programlisting">struct <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="returnvalue">_UsbemuInterface</span></a> *
+usbemu_configuration_get_alternate_interface
+                               (<em class="parameter"><code><a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> *configuration</code></em>,
+                                <em class="parameter"><code><span class="type">guint</span> interface_number</code></em>,
+                                <em class="parameter"><code><span class="type">guint</span> alternate_setting</code></em>);</pre>
+<p>Get the <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object of specified interface number and alternate
+setting value.</p>
+<div class="refsect3">
+<a name="usbemu-configuration-get-alternate-interface.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>configuration</p></td>
+<td class="parameter_description"><p>the <a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interface_number</p></td>
+<td class="parameter_description"><p>an interface number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>alternate_setting</p></td>
+<td class="parameter_description"><p>a alternate setting value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="usbemu-configuration-get-alternate-interface.returns"></a><h4>Returns</h4>
+<p>a <a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> object or <code class="literal">NULL</code> if error. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="usbemu-configuration-get-alternate-interfaces"></a><h3>usbemu_configuration_get_alternate_interfaces ()</h3>
-<pre class="programlisting"><span class="returnvalue">GSList</span> *
+<pre class="programlisting"><span class="returnvalue">GPtrArray</span> *
 usbemu_configuration_get_alternate_interfaces
                                (<em class="parameter"><code><a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> *configuration</code></em>,
                                 <em class="parameter"><code><span class="type">guint</span> interface_number</code></em>);</pre>
-<p>Get all interfaces with specified interface number in this configuration.</p>
+<p>Get all interfaces with specified interface number in this configuration. Use
+<code class="function">g_array_unref()</code> to free the returned array.</p>
 <div class="refsect3">
 <a name="usbemu-configuration-get-alternate-interfaces.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -663,7 +757,7 @@ usbemu_configuration_get_alternate_interfaces
 </tr>
 <tr>
 <td class="parameter_name"><p>interface_number</p></td>
-<td class="parameter_description"><p>a interface number.</p></td>
+<td class="parameter_description"><p>an interface number.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -672,7 +766,7 @@ usbemu_configuration_get_alternate_interfaces
 <div class="refsect3">
 <a name="usbemu-configuration-get-alternate-interfaces.returns"></a><h4>Returns</h4>
 <p><a class="link" href="UsbemuInterface.html" title="UsbemuInterface"><span class="type">UsbemuInterface</span></a> objects or <code class="literal">NULL</code> if not found. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> GSList(UsbemuInterface)]</span></p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> GPtrArray(UsbemuInterface*)]</span></p>
 </div>
 </div>
 <hr>
@@ -680,8 +774,9 @@ usbemu_configuration_get_alternate_interfaces
 <a name="usbemu-configuration-get-n-alternate-interfaces"></a><h3>usbemu_configuration_get_n_alternate_interfaces ()</h3>
 <pre class="programlisting"><span class="returnvalue">guint</span>
 usbemu_configuration_get_n_alternate_interfaces
-                               (<em class="parameter"><code><a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> *configuration</code></em>);</pre>
-<p>Get the number of available interfaces set.</p>
+                               (<em class="parameter"><code><a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> *configuration</code></em>,
+                                <em class="parameter"><code><span class="type">guint</span> interface_number</code></em>);</pre>
+<p>Get the number of available alternate interfaces of a given interface number.</p>
 <div class="refsect3">
 <a name="usbemu-configuration-get-n-alternate-interfaces.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -690,16 +785,23 @@ usbemu_configuration_get_n_alternate_interfaces
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="parameter_name"><p>configuration</p></td>
 <td class="parameter_description"><p>the <a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> object. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="parameter_name"><p>interface_number</p></td>
+<td class="parameter_description"><p>an interface number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="usbemu-configuration-get-n-alternate-interfaces.returns"></a><h4>Returns</h4>
-<p> number of available interfaces set.</p>
+<p> number of available interfaces.</p>
 </div>
 </div>
 </div>

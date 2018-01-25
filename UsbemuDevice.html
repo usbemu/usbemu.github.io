@@ -304,7 +304,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">GSList</span> *
+<span class="returnvalue">GPtrArray</span> *
 </td>
 <td class="function_name">
 <a class="link" href="UsbemuDevice.html#usbemu-device-get-configurations" title="usbemu_device_get_configurations ()">usbemu_device_get_configurations</a> <span class="c_punctuation">()</span>
@@ -1501,13 +1501,13 @@ object.</p></td>
 <a name="usbemu-device-get-configuration.returns"></a><h4>Returns</h4>
 <p>a <a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> if available, or <code class="literal">NULL</code>
 otherwise. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="usbemu-device-get-configurations"></a><h3>usbemu_device_get_configurations ()</h3>
-<pre class="programlisting"><span class="returnvalue">GSList</span> *
+<pre class="programlisting"><span class="returnvalue">GPtrArray</span> *
 usbemu_device_get_configurations (<em class="parameter"><code><a class="link" href="UsbemuDevice.html" title="UsbemuDevice"><span class="type">UsbemuDevice</span></a> *device</code></em>);</pre>
 <p>Get all available configurations of a device.</p>
 <div class="refsect3">
@@ -1528,20 +1528,9 @@ usbemu_device_get_configurations (<em class="parameter"><code><a class="link" hr
 <div class="refsect3">
 <a name="usbemu-device-get-configurations.returns"></a><h4>Returns</h4>
 <p>A list of
-<a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> objects added to the device. Free with:</p>
-<div class="informalexample">
-  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
-    <tbody>
-      <tr>
-        <td class="listing_lines" align="right"><pre>1</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="function">g_slist_free_full</span> <span class="gtkdoc opt">(</span>slist<span class="gtkdoc opt">, (</span>GDestroyNotify<span class="gtkdoc opt">)</span> g_object_unref<span class="gtkdoc opt">);</span></pre></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<p>. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> GSList(UsbemuConfiguration)]</span></p>
+<a class="link" href="UsbemuConfiguration.html" title="UsbemuConfiguration"><span class="type">UsbemuConfiguration</span></a> objects added to the device. Free with
+<code class="function">g_array_unref()</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> GPtrArray(UsbemuConfiguration*)]</span></p>
 </div>
 </div>
 <hr>
